@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEDHA Thattu Store — 52 Luxury Seeru Plates, Hampers & Return Gifts | 9597244055</title>
+  <meta name="description" content="Explore VEDHA's 52 Luxury South Indian Wedding Seeru Plates, Dry Fruit Hampers, Poo Veni, Turmeric Kumkum favors & Custom Brass Trays. Instant venue delivery across Tamil Nadu.">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar with Luxury Emblem -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-brand">
+        <div class="logo-badge">
+          <span class="logo-badge-icon">🪷</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-main">VEDHA</span>
+          <span class="logo-sub">THATTU STORE</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="thattu.html" class="nav-link active"><i class="fa-solid fa-store"></i> Store Hub</a></li>
+        <li><a href="thattu.html?mode=thattu" class="nav-link"><i class="fa-solid fa-basket-shopping"></i> Thattu Store (52)</a></li>
+        <li><a href="makeup.html" class="nav-link"><i class="fa-solid fa-crown"></i> Bridal (52)</a></li>
+        <li><a href="calendar.html" class="nav-link"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+      </ul>
+
+
+
+      <div class="nav-icons">
+        <button class="nav-icon-btn" id="wishlistBtn" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="nav-icon-btn" id="cartBtn" title="Enquiry Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <span class="hero-tagline" id="storeHeroTagline" style="color:var(--accent-gold-light);">ROYAL TAMIL WEDDING SEERU</span>
+      <h1 class="page-hero-title" id="storeHeroTitle">VEDHA Marketplace Store</h1>
+      <p class="page-hero-desc" id="storeHeroDesc">Explore 52 Thattu Plates, 52 Bridal Services, and 7 Dedicated Occasion Collections in one unified luxury store.</p>
+    </div>
+  </section>
+
+
+
+  <!-- Thattu Occasion Modes Visual Grid Section -->
+  <section class="thattu-modes-section" id="thattuModesVisualSection">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:12px;">
+        <span style="font-size:0.75rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1.5px;">EXPLORE BY CELEBRATION MODE</span>
+        <h2 style="font-family:var(--font-heading); font-size:1.6rem; color:var(--accent-maroon); margin-top:2px;">Select Occasion Mode</h2>
+      </div>
+
+      <div class="thattu-modes-grid">
+        <div class="thattu-mode-card active" data-mode="engagement" onclick="switchStoreMode('engagement', this)">
+          <span class="thattu-mode-icon">🌸</span>
+          <div class="thattu-mode-title">Engagement</div>
+          <div class="thattu-mode-sub">Velvet Ring Exchange Trays & Garlands</div>
+        </div>
+        <div class="thattu-mode-card" data-mode="seemantham" onclick="switchStoreMode('seemantham', this)">
+          <span class="thattu-mode-icon">🪷</span>
+          <div class="thattu-mode-title">Seemantham</div>
+          <div class="thattu-mode-sub">Glass Bangle Towers & Fruit Lotus</div>
+        </div>
+        <div class="thattu-mode-card" data-mode="housewarming" onclick="switchStoreMode('housewarming', this)">
+          <span class="thattu-mode-icon">🪔</span>
+          <div class="thattu-mode-title">Housewarming</div>
+          <div class="thattu-mode-sub">Brass Kuthu Vilakku & Panchaloha Idols</div>
+        </div>
+        <div class="thattu-mode-card" data-mode="deepavali" onclick="switchStoreMode('deepavali', this)">
+          <span class="thattu-mode-icon">🎇</span>
+          <div class="thattu-mode-title">Deepavali</div>
+          <div class="thattu-mode-sub">Ghee Sweets & Brass Diya Hampers</div>
+        </div>
+        <div class="thattu-mode-card" data-mode="pongal" onclick="switchStoreMode('pongal', this)">
+          <span class="thattu-mode-icon">🌾</span>
+          <div class="thattu-mode-title">Pongal</div>
+          <div class="thattu-mode-sub">Harvest Terracotta Pots & Sugarcane</div>
+        </div>
+        <div class="thattu-mode-card" data-mode="returngifts" onclick="switchStoreMode('returngifts', this)">
+          <span class="thattu-mode-icon">🎁</span>
+          <div class="thattu-mode-title">Return Gifts</div>
+          <div class="thattu-mode-sub">Tamboolam Brass Boxes & Silk Bags</div>
+        </div>
+        <div class="thattu-mode-card" data-mode="corporate" onclick="switchStoreMode('corporate', this)">
+          <span class="thattu-mode-icon">💼</span>
+          <div class="thattu-mode-title">Corporate</div>
+          <div class="thattu-mode-sub">Executive Brass & Silver Hampers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Sticky Store Filter & Search Bar -->
+  <div class="store-filter-bar">
+    <div class="container store-filter-inner">
+      <div class="store-search-box">
+        <i class="fa-solid fa-magnifying-glass store-search-icon"></i>
+        <input type="text" id="thattuSearchInput" class="store-search-input" placeholder="Search Store (e.g. Brass, Coconut, Makeup, Garlands...)" onkeyup="searchThattuItems()">
+      </div>
+      <div class="store-cat-pills" id="storeSubPills">
+        <button class="cat-pill active" onclick="filterThattuCategory('all', this)">All 52 Thattus</button>
+        <button class="cat-pill" onclick="filterThattuCategory('coconuts', this)">🥥 Thali Coconuts</button>
+        <button class="cat-pill" onclick="filterThattuCategory('dryfruits', this)">🌰 Dry Fruits</button>
+        <button class="cat-pill" onclick="filterThattuCategory('sweets', this)">🍬 Sweets & Halwa</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Dedicated Mode Banner Container -->
+  <div class="container" id="modeSpecialBanner" style="display:none; margin-top:24px;"></div>
+
+
+  <!-- Main 52 Thattu Grid Section -->
+  <section class="section-padding" style="padding-top: 30px;">
+    <div class="container">
+      <div class="products-grid" id="thattuStoreGrid">
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="royal peacock carved thali coconut">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="Royal Peacock Carved Thali Coconut" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #1</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Royal Peacock Carved Thali Coconut</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Hand-carved gold painted coconut with intricate peacock feather motif and velvet base.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,250</span>
+              <button onclick="addToCart('thattu_1', 'Royal Peacock Carved Thali Coconut', 1250, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="pure silver filigree decorated coconut">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="Pure Silver Filigree Decorated Coconut" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #2</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Pure Silver Filigree Decorated Coconut</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Traditional wedding coconut wrapped in hallmarked silver foil with pearl tassel.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,100</span>
+              <button onclick="addToCart('thattu_2', 'Pure Silver Filigree Decorated Coconut', 2100, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="bridal kumkum sandal coconut pair">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="Bridal Kumkum Sandal Coconut Pair" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #3</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Bridal Kumkum Sandal Coconut Pair</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Twin decorated coconuts with authentic Srivilliputhur kumkum and Mysore sandal paste.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,450</span>
+              <button onclick="addToCart('thattu_3', 'Bridal Kumkum Sandal Coconut Pair', 1450, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="kumbakonam temple brass coconut plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="Kumbakonam Temple Brass Coconut Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #4</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Kumbakonam Temple Brass Coconut Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Brass plate with 3 carved coconuts and aromatic turmeric beads.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,800</span>
+              <button onclick="addToCart('thattu_4', 'Kumbakonam Temple Brass Coconut Plate', 1800, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="ganesha relief carved wedding coconut">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="Ganesha Relief Carved Wedding Coconut" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #5</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Ganesha Relief Carved Wedding Coconut</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Embossed Lord Ganesha design adorned with red silk ribbon and sequins.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,350</span>
+              <button onclick="addToCart('thattu_5', 'Ganesha Relief Carved Wedding Coconut', 1350, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="velvet ribbon lotus decorated coconut">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="Velvet Ribbon Lotus Decorated Coconut" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #6</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Velvet Ribbon Lotus Decorated Coconut</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Handcrafted coconut wrapped in maroon velvet ribbon with Kundan stone embellishments.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹950</span>
+              <button onclick="addToCart('thattu_6', 'Velvet Ribbon Lotus Decorated Coconut', 950, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="traditional kundan stone seeru coconut">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="Traditional Kundan Stone Seeru Coconut" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #7</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Traditional Kundan Stone Seeru Coconut</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Heavy Kundan work coconut on hand-carved teakwood stand.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,600</span>
+              <button onclick="addToCart('thattu_7', 'Traditional Kundan Stone Seeru Coconut', 1600, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="south indian radha krishna carved coconut">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="South Indian Radha Krishna Carved Coconut" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #8</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">South Indian Radha Krishna Carved Coconut</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Artisan carved divine couple motif with antique gold finish.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,750</span>
+              <button onclick="addToCart('thattu_8', 'South Indian Radha Krishna Carved Coconut', 1750, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="zardozi embroidered silk coconut wrap">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="Zardozi Embroidered Silk Coconut Wrap" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #9</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Zardozi Embroidered Silk Coconut Wrap</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Rich Zardozi zari worked silk fabric wrap for auspicious ceremonies.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,100</span>
+              <button onclick="addToCart('thattu_9', 'Zardozi Embroidered Silk Coconut Wrap', 1100, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="coconuts" data-name="golden lotus bloom decorated coconut">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/carved_coconut_seer.png" alt="Golden Lotus Bloom Decorated Coconut" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #10</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">COCONUTS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Golden Lotus Bloom Decorated Coconut</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">3D lotus petal base with hand-painted gold coconut centerpiece.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,500</span>
+              <button onclick="addToCart('thattu_10', 'Golden Lotus Bloom Decorated Coconut', 1500, 'images/carved_coconut_seer.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="imperial almond & cashew pyramid tray">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Imperial Almond & Cashew Pyramid Tray" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #11</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Imperial Almond & Cashew Pyramid Tray</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Stacked arrangement of premium California almonds and jumbo W240 cashews.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹3,200</span>
+              <button onclick="addToCart('thattu_11', 'Imperial Almond & Cashew Pyramid Tray', 3200, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="afghan fig & stuffed date tower">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Afghan Fig & Stuffed Date Tower" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #12</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Afghan Fig & Stuffed Date Tower</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Organic Anjeer figs and almond-stuffed Medjool dates on silver tray.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹3,800</span>
+              <button onclick="addToCart('thattu_12', 'Afghan Fig & Stuffed Date Tower', 3800, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="kashmiri saffron & pistachio seeru plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Kashmiri Saffron & Pistachio Seeru Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #13</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Kashmiri Saffron & Pistachio Seeru Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Green salted pistachios paired with authentic Pampore saffron pods.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹4,500</span>
+              <button onclick="addToCart('thattu_13', 'Kashmiri Saffron & Pistachio Seeru Plate', 4500, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="royal walnut & hazelnut brass hamper">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Royal Walnut & Hazelnut Brass Hamper" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #14</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Royal Walnut & Hazelnut Brass Hamper</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Chilean walnuts and roasted hazelnuts presented in handcrafted brass vessel.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,900</span>
+              <button onclick="addToCart('thattu_14', 'Royal Walnut & Hazelnut Brass Hamper', 2900, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="gold leaf coated dry fruit collection">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Gold Leaf Coated Dry Fruit Collection" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #15</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Gold Leaf Coated Dry Fruit Collection</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Edible 24k gold leaf coated almonds, cashews, and macadamia nuts.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹5,200</span>
+              <button onclick="addToCart('thattu_15', 'Gold Leaf Coated Dry Fruit Collection', 5200, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="velvet boxed royal nut selection">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Velvet Boxed Royal Nut Selection" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #16</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Velvet Boxed Royal Nut Selection</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">4-compartment velvet box featuring premium mixed roasted dry fruits.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,600</span>
+              <button onclick="addToCart('thattu_16', 'Velvet Boxed Royal Nut Selection', 2600, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="dry fruit & dark chocolate fusion plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Dry Fruit & Dark Chocolate Fusion Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #17</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Dry Fruit & Dark Chocolate Fusion Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Handcrafted dark chocolate pralines filled with crushed pistachios & almonds.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹3,100</span>
+              <button onclick="addToCart('thattu_17', 'Dry Fruit & Dark Chocolate Fusion Plate', 3100, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="grand 7-tier dry fruit canopy plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Grand 7-Tier Dry Fruit Canopy Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #18</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Grand 7-Tier Dry Fruit Canopy Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Multi-tiered celebration plate with all premium nuts and dried berries.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹6,800</span>
+              <button onclick="addToCart('thattu_18', 'Grand 7-Tier Dry Fruit Canopy Plate', 6800, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="saffron roasted cashew & macadamia hamper">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Saffron Roasted Cashew & Macadamia Hamper" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #19</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Saffron Roasted Cashew & Macadamia Hamper</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Lightly salted saffron inflections on premium jumbo cashews.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹3,400</span>
+              <button onclick="addToCart('thattu_19', 'Saffron Roasted Cashew & Macadamia Hamper', 3400, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="dryfruits" data-name="pecan & dried cranberry luxury basket">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/chocolate_dryfruit_plate.png" alt="Pecan & Dried Cranberry Luxury Basket" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #20</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">DRYFRUITS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Pecan & Dried Cranberry Luxury Basket</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Imported pecans, dried cranberries, and dried apricots in wicker tray.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,800</span>
+              <button onclick="addToCart('thattu_20', 'Pecan & Dried Cranberry Luxury Basket', 2800, 'images/chocolate_dryfruit_plate.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="tirunelveli wheat halwa heritage plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Tirunelveli Wheat Halwa Heritage Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #21</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Tirunelveli Wheat Halwa Heritage Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Authentic ghee Tirunelveli halwa served in solid polished brass vessel.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,800</span>
+              <button onclick="addToCart('thattu_21', 'Tirunelveli Wheat Halwa Heritage Plate', 1800, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="srivilliputhur palkova & laddu seeru">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Srivilliputhur Palkova & Laddu Seeru" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #22</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Srivilliputhur Palkova & Laddu Seeru</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Traditional milk palkova and boondi laddus wrapped in banana leaf box.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,200</span>
+              <button onclick="addToCart('thattu_22', 'Srivilliputhur Palkova & Laddu Seeru', 2200, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="pure ghee saffron mysore pak tower">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Pure Ghee Saffron Mysore Pak Tower" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #23</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Pure Ghee Saffron Mysore Pak Tower</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Melt-in-mouth ghee Mysore pak arranged in regal geometric structure.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,500</span>
+              <button onclick="addToCart('thattu_23', 'Pure Ghee Saffron Mysore Pak Tower', 2500, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="kaju katli & silver vark gift tray">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Kaju Katli & Silver Vark Gift Tray" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #24</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Kaju Katli & Silver Vark Gift Tray</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Diamond cut silver vark topped cashew fudge in royal maroon box.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,700</span>
+              <button onclick="addToCart('thattu_24', 'Kaju Katli & Silver Vark Gift Tray', 2700, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="madurai jigarthanda halwa & sweets combo">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Madurai Jigarthanda Halwa & Sweets Combo" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #25</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Madurai Jigarthanda Halwa & Sweets Combo</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Signature Madurai almond gum sweets and traditional milk halwa.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,950</span>
+              <button onclick="addToCart('thattu_25', 'Madurai Jigarthanda Halwa & Sweets Combo', 1950, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="dry fruit halwa & stuffed figs tray">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Dry Fruit Halwa & Stuffed Figs Tray" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #26</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Dry Fruit Halwa & Stuffed Figs Tray</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">No-added-sugar dry fruit sugarless halwa with cardamom aroma.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹3,300</span>
+              <button onclick="addToCart('thattu_26', 'Dry Fruit Halwa & Stuffed Figs Tray', 3300, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="traditional badam halwa brass bowl">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Traditional Badam Halwa Brass Bowl" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #27</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Traditional Badam Halwa Brass Bowl</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Rich almond paste cooked in pure cow ghee and saffron strands.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,950</span>
+              <button onclick="addToCart('thattu_27', 'Traditional Badam Halwa Brass Bowl', 2950, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="assorted south indian heritage sweets box">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Assorted South Indian Heritage Sweets Box" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #28</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Assorted South Indian Heritage Sweets Box</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Athirasam, Jangiri, Groundnut Candy, and Coconut Burfi ensemble.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,100</span>
+              <button onclick="addToCart('thattu_28', 'Assorted South Indian Heritage Sweets Box', 2100, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="rose water gulab jamun & rasgulla seeru">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Rose Water Gulab Jamun & Rasgulla Seeru" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #29</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Rose Water Gulab Jamun & Rasgulla Seeru</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Fragrant rose elixir sweets presented in glass ceramic bowls.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,650</span>
+              <button onclick="addToCart('thattu_29', 'Rose Water Gulab Jamun & Rasgulla Seeru', 1650, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="sweets" data-name="royal mango peda & malai roll plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/sweets_halwa_tray.png" alt="Royal Mango Peda & Malai Roll Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #30</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SWEETS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Royal Mango Peda & Malai Roll Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Alphonso mango infused milk pedas topped with silver leaf.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,400</span>
+              <button onclick="addToCart('thattu_30', 'Royal Mango Peda & Malai Roll Plate', 2400, 'images/sweets_halwa_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="madrasi jasmine & lotus flower veni">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Madrasi Jasmine & Lotus Flower Veni" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #31</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Madrasi Jasmine & Lotus Flower Veni</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Fragrant Madurai Malligai woven with lotus buds for bridal braid.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,400</span>
+              <button onclick="addToCart('thattu_31', 'Madrasi Jasmine & Lotus Flower Veni', 1400, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="rose petal & gold bead garland plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Rose Petal & Gold Bead Garland Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #32</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Rose Petal & Gold Bead Garland Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Hand-strung Dutch red roses with gold zari bead spacers.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,900</span>
+              <button onclick="addToCart('thattu_32', 'Rose Petal & Gold Bead Garland Plate', 1900, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="orchid & tube rose braid accessories">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Orchid & Tube Rose Braid Accessories" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #33</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Orchid & Tube Rose Braid Accessories</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Purple Singapore orchids intertwined with fragrant tuberose.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,650</span>
+              <button onclick="addToCart('thattu_33', 'Orchid & Tube Rose Braid Accessories', 1650, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="traditional sampangi & marigold seeru">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Traditional Sampangi & Marigold Seeru" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #34</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Traditional Sampangi & Marigold Seeru</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Auspicious yellow and orange marigold flowers with betel leaves.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,150</span>
+              <button onclick="addToCart('thattu_34', 'Traditional Sampangi & Marigold Seeru', 1150, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="bridal jasmine flower net & poola jada">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Bridal Jasmine Flower Net & Poola Jada" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #35</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Bridal Jasmine Flower Net & Poola Jada</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Full length Jasmine flower netting for traditional South Indian braid.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹3,500</span>
+              <button onclick="addToCart('thattu_35', 'Bridal Jasmine Flower Net & Poola Jada', 3500, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="pink rose bud & gypsophila bridal veni">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Pink Rose Bud & Gypsophila Bridal Veni" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #36</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Pink Rose Bud & Gypsophila Bridal Veni</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Soft pastel pink rose buds blended with baby's breath flowers.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,550</span>
+              <button onclick="addToCart('thattu_36', 'Pink Rose Bud & Gypsophila Bridal Veni', 1550, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="carnation & jasmine mandapam floral plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Carnation & Jasmine Mandapam Floral Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #37</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Carnation & Jasmine Mandapam Floral Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Aromatic floral arrangement designed for thali blessing ritual.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,200</span>
+              <button onclick="addToCart('thattu_37', 'Carnation & Jasmine Mandapam Floral Plate', 2200, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="kundalam styled lotus flower hair decor">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Kundalam Styled Lotus Flower Hair Decor" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #38</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Kundalam Styled Lotus Flower Hair Decor</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Handmade lotus hair brooch with fresh jasmine strands.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,850</span>
+              <button onclick="addToCart('thattu_38', 'Kundalam Styled Lotus Flower Hair Decor', 1850, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="golden champa & jasmine fusion veni">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Golden Champa & Jasmine Fusion Veni" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #39</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Golden Champa & Jasmine Fusion Veni</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Golden Shenbagam flowers paired with evening jasmine.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,300</span>
+              <button onclick="addToCart('thattu_39', 'Golden Champa & Jasmine Fusion Veni', 1300, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="jasmine garland with antique pendant">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Jasmine Garland with Antique Pendant" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #40</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Jasmine Garland with Antique Pendant</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Heavy jasmine garland with Lakshmi antique brooch centerpiece.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,400</span>
+              <button onclick="addToCart('thattu_40', 'Jasmine Garland with Antique Pendant', 2400, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="flowers" data-name="fresh mogra & crimson rose petal basket">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/seeru_plate_wedding.png" alt="Fresh Mogra & Crimson Rose Petal Basket" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #41</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">FLOWERS</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Fresh Mogra & Crimson Rose Petal Basket</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Basket of loose fragrant flower petals for shower blessing.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹980</span>
+              <button onclick="addToCart('thattu_41', 'Fresh Mogra & Crimson Rose Petal Basket', 980, 'images/seeru_plate_wedding.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="koorai saree zari embroidered velvet tray">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Koorai Saree Zari Embroidered Velvet Tray" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #42</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Koorai Saree Zari Embroidered Velvet Tray</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Luxury velvet padded tray crafted for presenting bridal silk sarees.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹4,200</span>
+              <button onclick="addToCart('thattu_42', 'Koorai Saree Zari Embroidered Velvet Tray', 4200, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="temple gold jewelry display showcase">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Temple Gold Jewelry Display Showcase" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #43</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Temple Gold Jewelry Display Showcase</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Satin lined glass top showcase for antique bridal jewelry.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹5,800</span>
+              <button onclick="addToCart('thattu_43', 'Temple Gold Jewelry Display Showcase', 5800, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="brass turmeric kumkum favor hampers (set of 21)">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Brass Turmeric Kumkum Favor Hampers (Set of 21)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #44</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Brass Turmeric Kumkum Favor Hampers (Set of 21)</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Handcrafted small brass kumkum chimizh with authentic ingredients.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹3,400</span>
+              <button onclick="addToCart('thattu_44', 'Brass Turmeric Kumkum Favor Hampers (Set of 21)', 3400, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="silver plated pan patra & betel nut plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Silver Plated Pan Patra & Betel Nut Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #45</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Silver Plated Pan Patra & Betel Nut Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Embossed silver pan leaf with premium betel nuts and cardamoms.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,800</span>
+              <button onclick="addToCart('thattu_45', 'Silver Plated Pan Patra & Betel Nut Plate', 2800, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="silk blouse piece & bangle favor tray">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Silk Blouse Piece & Bangle Favor Tray" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #46</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Silk Blouse Piece & Bangle Favor Tray</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Brocade silk fabric with matching glass bangles for wedding guests.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹2,300</span>
+              <button onclick="addToCart('thattu_46', 'Silk Blouse Piece & Bangle Favor Tray', 2300, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="bridal sandalwood stamp & perfume box">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Bridal Sandalwood Stamp & Perfume Box" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #47</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Bridal Sandalwood Stamp & Perfume Box</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Pure Mysore sandalwood block, stamp, and natural attar oils.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹3,900</span>
+              <button onclick="addToCart('thattu_47', 'Bridal Sandalwood Stamp & Perfume Box', 3900, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="customized groom dhoti & angavastram plate">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Customized Groom Dhoti & Angavastram Plate" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #48</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Customized Groom Dhoti & Angavastram Plate</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Pure silk dhoti with gold zari border presented in wooden tray.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹4,600</span>
+              <button onclick="addToCart('thattu_48', 'Customized Groom Dhoti & Angavastram Plate', 4600, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="handcrafted lac & thread glass bangle tower">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Handcrafted Lac & Thread Glass Bangle Tower" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #49</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Handcrafted Lac & Thread Glass Bangle Tower</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Assorted bridal bangles arranged in velvet lined tower.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹1,950</span>
+              <button onclick="addToCart('thattu_49', 'Handcrafted Lac & Thread Glass Bangle Tower', 1950, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="rose water sprinkler & attar bottle set">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Rose Water Sprinkler & Attar Bottle Set" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #50</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Rose Water Sprinkler & Attar Bottle Set</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Solid brass vintage style rose water gulab pash and perfume.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹3,100</span>
+              <button onclick="addToCart('thattu_50', 'Rose Water Sprinkler & Attar Bottle Set', 3100, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="traditional manjal kunkumam gift boxes (set of 51)">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Traditional Manjal Kunkumam Gift Boxes (Set of 51)" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #51</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Traditional Manjal Kunkumam Gift Boxes (Set of 51)</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Individual gift boxes with turmeric, kumkum, sugar candy & bangles.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹4,900</span>
+              <button onclick="addToCart('thattu_51', 'Traditional Manjal Kunkumam Gift Boxes (Set of 51)', 4900, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card thattu-card" data-category="saree" data-name="grand heritage mandapam seeru complete set">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="images/pearl_velvet_tray.png" alt="Grand Heritage Mandapam Seeru Complete Set" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">SEERU #52</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">SAREE</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">Grand Heritage Mandapam Seeru Complete Set</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Master set of 11 matching velvet trays for complete wedding ceremony.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹15,500</span>
+              <button onclick="addToCart('thattu_52', 'Grand Heritage Mandapam Seeru Complete Set', 15500, 'images/pearl_velvet_tray.png')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct Mandapam & Hall Delivery Order Form -->
+  <section class="section-padding" id="custom-order" style="background-color: var(--bg-secondary);">
+    <div class="container" style="max-width: 800px;">
+      <h2 class="section-title">Direct Mandap / Hall Delivery</h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtitle">Need customized Seeru arrangements delivered directly to your wedding mandapam? Fill out your details below.</p>
+
+      <div style="background: var(--bg-primary); border: 2px solid var(--border-beige); padding: 30px; border-radius: var(--radius-card); box-shadow: var(--shadow-soft);">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+          <div>
+            <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px; color:var(--accent-maroon);">Your Full Name *</label>
+            <input type="text" id="thattuCustName" placeholder="e.g. Anitha Sundaram" style="width:100%; padding:10px 14px; border:1px solid var(--border-beige); border-radius:8px; outline:none;">
+          </div>
+          <div>
+            <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px; color:var(--accent-maroon);">Mobile / WhatsApp *</label>
+            <input type="tel" id="thattuCustPhone" placeholder="e.g. 9876543210" style="width:100%; padding:10px 14px; border:1px solid var(--border-beige); border-radius:8px; outline:none;">
+          </div>
+        </div>
+
+        <div style="margin-bottom: 16px;">
+          <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px; color:var(--accent-maroon);">Wedding Hall / Mandapam Address *</label>
+          <input type="text" id="thattuDeliveryAddress" placeholder="e.g. Mayor Ramanathan Hall, Chetpet, Chennai" style="width:100%; padding:10px 14px; border:1px solid var(--border-beige); border-radius:8px; outline:none;">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+          <div>
+            <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px; color:var(--accent-maroon);">Event Muhurtham Date *</label>
+            <input type="date" id="thattuDeliveryDate" style="width:100%; padding:10px 14px; border:1px solid var(--border-beige); border-radius:8px; outline:none;">
+          </div>
+          <div>
+            <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px; color:var(--accent-maroon);">Special Requirements</label>
+            <input type="text" id="thattuDeliveryNotes" placeholder="e.g. Red silk theme, 21 plates" style="width:100%; padding:10px 14px; border:1px solid var(--border-beige); border-radius:8px; outline:none;">
+          </div>
+        </div>
+
+        <button onclick="submitThattuDelivery()" class="btn-primary" style="width:100%; padding:14px;">
+          <i class="fa-brands fa-whatsapp"></i> Dispatch Order to Concierge (WhatsApp 9597244055)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 VEDHA Traditions. All Rights Reserved. WhatsApp / Concierge: 9597244055.</p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-bottom-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="thattu.html" class="mobile-bottom-link active"><i class="fa-solid fa-store"></i><span>Store</span></a>
+    <a href="thattu.html?mode=thattu" class="mobile-bottom-link"><i class="fa-solid fa-basket-shopping"></i><span>Thattu</span></a>
+    <a href="makeup.html" class="mobile-bottom-link"><i class="fa-solid fa-crown"></i><span>Bridal</span></a>
+    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span>Wishlist</span><b id="mobileWishlistCount">0</b></button>
+    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="cart" aria-label="Enquiry cart"><i class="fa-solid fa-bag-shopping"></i><span>Cart</span><b id="mobileCartCount">0</b></button>
+  </nav>
+
+
+
+  <!-- Drawer Overlay & Drawers -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Cart Drawer -->
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-solid fa-bag-shopping"></i> Enquiry Cart</h3>
+      <button class="drawer-close" id="closeCartBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItemsContainer"></div>
+    <div class="drawer-footer">
+      <div style="display:flex; justify-content:space-between; margin-bottom:16px; font-weight:600; font-size:1.1rem; font-family:var(--font-heading);">
+        <span>Est. Total:</span>
+        <span id="cartTotalAmount" style="color:var(--accent-maroon);">₹0</span>
+      </div>
+      <button class="btn-primary" id="waCheckoutBtn" style="width:100%;">
+        <i class="fa-brands fa-whatsapp"></i> Send Order via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-regular fa-heart"></i> Saved Wishlist</h3>
+      <button class="drawer-close" id="closeWishlistBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistItemsContainer"></div>
+  </div>
+
+  <!-- Drawer Overlay & Drawers -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Cart Drawer -->
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-solid fa-bag-shopping"></i> Enquiry Cart</h3>
+      <button class="drawer-close" id="closeCartBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItemsContainer"></div>
+    <div class="drawer-footer">
+      <div style="display:flex; justify-content:space-between; margin-bottom:16px; font-weight:600; font-size:1.1rem; font-family:var(--font-heading);">
+        <span>Est. Total:</span>
+        <span id="cartTotalAmount" style="color:var(--accent-maroon);">₹0</span>
+      </div>
+      <button class="btn-primary" id="waCheckoutBtn" style="width:100%;">
+        <i class="fa-brands fa-whatsapp"></i> Send Order via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-regular fa-heart"></i> Saved Wishlist</h3>
+      <button class="drawer-close" id="closeWishlistBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistItemsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const occasionData = {
+      engagement: {
+        title: "🌸 Engagement (Nichayathartham) Mode",
+        tagline: "OCCASION MODE — ENGAGEMENT",
+        desc: "Royal velvet ring exchange trays, pearl & rose garlands, dry fruit hampers, and silver ring presentation boxes.",
+        img: "images/engagement_ring_tray.png",
+        pageUrl: "occasions.html?mode=engagement",
+        items: [
+          { id: "eng_1", title: "Royal Velvet Ring Exchange Tray", price: 15000, category: "trays", desc: "Handcrafted velvet tray with satin cushion & LED ring spotlight.", img: "images/engagement_ring_tray.png" },
+          { id: "eng_2", title: "Pearl & Rose Garland Engagement Set", price: 18500, category: "garlands", desc: "Matching fresh rose & pearl garland pair for bride & groom.", img: "images/engagement_ring_tray.png" },
+          { id: "eng_3", title: "Dry Fruit Pyramid & Silk Shawl Hamper", price: 12000, category: "hampers", desc: "Multi-tier almond, cashew tower with pure Zari silk shawl.", img: "images/chocolate_dryfruit_plate.png" },
+          { id: "eng_4", title: "Silver Plated Coin & Ring Display Box", price: 22000, category: "boxes", desc: "Hallmarked silver-plated box with velvet lining.", img: "images/engagement_ring_tray.png" }
+        ]
+      },
+      seemantham: {
+        title: "🪷 Seemantham (Baby Shower) Mode",
+        tagline: "OCCASION MODE — SEEMANTHAM",
+        desc: "Traditional carved fruit lotus baskets, glass bangle towers, silver souvenirs, and Mysore sandalwood favors.",
+        img: "images/seemantham_bangle_fruit.png",
+        pageUrl: "occasions.html?mode=seemantham",
+        items: [
+          { id: "see_1", title: "Carved Lotus Fruit Basket & Bangle Set", price: 9500, category: "fruits", desc: "Hand-carved lotus watermelon, apples & 108 glass bangles.", img: "images/seemantham_bangle_fruit.png" },
+          { id: "see_2", title: "Silver Bangles & Turmeric Favor Trays", price: 14000, category: "favors", desc: "Pure silver baby bangles with organic Srivilliputhur turmeric.", img: "images/seemantham_bangle_fruit.png" },
+          { id: "see_3", title: "Mysore Sandal & Glass Bangle Tower", price: 8000, category: "bangles", desc: "Handcrafted wooden bangle tree wrapped in jasmine flowers.", img: "images/seemantham_bangle_fruit.png" },
+          { id: "see_4", title: "Royal Brass Pot & Sacred Oil Set", price: 11500, category: "pooja", desc: "Polished brass chembu with sacred herbal oil & kumkum.", img: "images/carved_coconut_seer.png" }
+        ]
+      },
+      housewarming: {
+        title: "🪔 Housewarming (Grihapravesam) Mode",
+        tagline: "OCCASION MODE — HOUSEWARMING",
+        desc: "Auspicious brass Kuthu Vilakku oil lamps, turmeric kumkum boxes, mango leaf toran sets, and Panchaloha idols.",
+        img: "images/housewarming_brass_vilakku.png",
+        pageUrl: "occasions.html?mode=housewarming",
+        items: [
+          { id: "hw_1", title: "Polished Brass Kuthu Vilakku & Diya Set", price: 16500, category: "lamps", desc: "Pair of 3-foot traditional brass oil lamps with peacock pinnacle.", img: "images/housewarming_brass_vilakku.png" },
+          { id: "hw_2", title: "Turmeric Kumkum Brass Container Box", price: 7500, category: "boxes", desc: "Engraved brass favor box filled with pure Kumkum & Turmeric.", img: "images/housewarming_brass_vilakku.png" },
+          { id: "hw_3", title: "Mango Leaf & Fresh Flower Toran Set", price: 6000, category: "toran", desc: "Traditional doorway garland handcrafted with fresh marigolds.", img: "images/housewarming_brass_vilakku.png" },
+          { id: "hw_4", title: "Panchaloha Divine Kamadhenu Idol", price: 28000, category: "idols", desc: "Handcrafted 5-metal sacred cow & calf sculpture for altar.", img: "images/housewarming_brass_vilakku.png" }
+        ]
+      },
+      deepavali: {
+        title: "🎇 Deepavali Collections Mode",
+        tagline: "OCCASION MODE — DEEPAVALI",
+        desc: "Pure ghee sweets, artisanal brass diya hampers, gold vark Kaju Katli trays, and gourmet seed pyramids.",
+        img: "images/deepavali_diya_seeru.png",
+        pageUrl: "occasions.html?mode=deepavali",
+        items: [
+          { id: "dp_1", title: "Pure Ghee Mysore Pak & Laddu Box", price: 8500, category: "sweets", desc: "Traditional Tirunelveli ghee halwa & melt-in-mouth Mysore pak.", img: "images/deepavali_diya_seeru.png" },
+          { id: "dp_2", title: "Artisanal Brass Diya & Dry Fruit Box", price: 10500, category: "hampers", desc: "Pair of brass lotus oil lamps with premium pistachio hamper.", img: "images/deepavali_diya_seeru.png" },
+          { id: "dp_3", title: "Royal Gold Vark Kaju Katli Tray", price: 12500, category: "sweets", desc: "Silver & gold leaf topped cashew sweets in velvet presentation box.", img: "images/deepavali_diya_seeru.png" },
+          { id: "dp_4", title: "Premium Nut & Seed Gourmet Hamper", price: 9000, category: "dryfruits", desc: "Curated almonds, walnuts, dates & figs in brass compartment tray.", img: "images/deepavali_diya_seeru.png" }
+        ]
+      },
+      pongal: {
+        title: "🌾 Pongal Celebrations Mode",
+        tagline: "OCCASION MODE — PONGAL",
+        desc: "Decorated terracotta harvest pots, organic sugarcane hampers, brass milk pots, and fresh marigold favors.",
+        img: "images/pongal_harvest_pot.png",
+        pageUrl: "occasions.html?mode=pongal",
+        items: [
+          { id: "pg_1", title: "Decorated Terracotta Pot & Sugarcane Set", price: 7000, category: "pots", desc: "Hand-painted clay pot tied with fresh turmeric plant & sugarcane.", img: "images/pongal_harvest_pot.png" },
+          { id: "pg_2", title: "Organic Jaggery & Rice Harvest Hamper", price: 5500, category: "hampers", desc: "Pure organic jaggery, raw red rice & cardamom gift basket.", img: "images/pongal_harvest_pot.png" },
+          { id: "pg_3", title: "Traditional Brass Milk Pot & Ladle", price: 11000, category: "vessels", desc: "Polished brass vessel for sacred Pongal boiling ceremony.", img: "images/pongal_harvest_pot.png" },
+          { id: "pg_4", title: "Festive Marigold Garland & Sweets Set", price: 8500, category: "garlands", desc: "Fresh yellow marigold garland paired with sugarcane halwa.", img: "images/pongal_harvest_pot.png" }
+        ]
+      },
+      returngifts: {
+        title: "🎁 Return Gifts (Tamboolam) Mode",
+        tagline: "OCCASION MODE — RETURN GIFTS",
+        desc: "Handcrafted brass kumkum boxes, silk tote favor bags, pure silver coins, and Mysore sandalwood kits.",
+        img: "images/return_gifts_tamboolam.png",
+        pageUrl: "occasions.html?mode=returngifts",
+        items: [
+          { id: "rg_1", title: "Handcrafted Brass Kumkum Box (25 Pcs)", price: 6250, category: "favors", desc: "Set of 25 peacock embossed brass kumkum chimizh favor boxes.", img: "images/return_gifts_tamboolam.png" },
+          { id: "rg_2", title: "Silk Screened Jute Gift Bags (50 Pcs)", price: 8500, category: "bags", desc: "Set of 50 traditional gold printed favor bags.", img: "images/return_gifts_tamboolam.png" },
+          { id: "rg_3", title: "Pure Silver Plated Lakshmi Coins (20 Pcs)", price: 14000, category: "coins", desc: "Hallmarked silver coins packaged in velvet gift boxes.", img: "images/return_gifts_tamboolam.png" },
+          { id: "rg_4", title: "Sandalwood Soap & Turmeric Kit (30 Pcs)", price: 7500, category: "kits", desc: "Organic Mysore sandalwood soap & turmeric favor set.", img: "images/return_gifts_tamboolam.png" }
+        ]
+      },
+      corporate: {
+        title: "💼 Corporate & Festive Gifting Mode",
+        tagline: "OCCASION MODE — CORPORATE",
+        desc: "Bespoke executive gift hampers, brass journals, custom velvet chests, and silver plated urn sets.",
+        img: "images/pearl_velvet_tray.png",
+        pageUrl: "occasions.html?mode=corporate",
+        items: [
+          { id: "corp_1", title: "Executive Brass Pen & Leather Journal Gift", price: 18000, category: "executive", desc: "Hand-embossed brass pen with genuine leather journal set.", img: "images/pearl_velvet_tray.png" },
+          { id: "corp_2", title: "Custom Branded Velvet Hamper Box", price: 25000, category: "hampers", desc: "Luxury velvet hamper customized with corporate metal logo.", img: "images/pearl_velvet_tray.png" },
+          { id: "corp_3", title: "Artisanal Tea & Dry Fruit Wooden Chest", price: 15000, category: "chests", desc: "Carved rosewood chest with premium teas & roasted nuts.", img: "images/chocolate_dryfruit_plate.png" },
+          { id: "corp_4", title: "Royal Silver Plated Tray & Urn Set", price: 32000, category: "silver", desc: "Hallmarked silver-plated tray set for VIP corporate gifting.", img: "images/pearl_velvet_tray.png" }
+        ]
+      }
+    };
+
+    const makeupStoreItems = [
+      { id: "m_1", title: "HD Water-Resistant Muhurtham Bridal Makeup", category: "makeup", price: 15000, img: "images/bridal_makeup_look1.png", desc: "Traditional South Indian Muhurtham makeup with 24-hr sweatproof HD glow." },
+      { id: "m_2", title: "3D Airbrush Reception Glam Makeup", category: "makeup", price: 18000, img: "images/bridal_makeup_look1.png", desc: "Featherlight airbrush finish with soft champagne highlighter." },
+      { id: "m_3", title: "Jasmine & Rose Petal Braid Poo Veni Art", category: "hair", price: 3500, img: "images/poo_veni_hair_art.png", desc: "Fresh fragrant Madurai malli Poo Veni woven into traditional braid." },
+      { id: "m_4", title: "Full Arm Royal Marwari Bridal Mehendi", category: "mehendi", price: 3500, img: "images/mehendi_hands.png", desc: "Elbow-length dense henna featuring Baraat & Doli motifs." },
+      { id: "m_5", title: "Traditional Koorai Saree Box Pleating", category: "draping", price: 1200, img: "images/pearl_velvet_tray.png", desc: "Pre-pleated crisp silk saree draping with pin security." },
+      { id: "m_6", title: "Glass Bangle & Sandal Powder Favors", category: "hair", price: 2500, img: "images/seemantham_bangle_fruit.png", desc: "Matching glass bangles & organic Mysore sandalwood kit." }
+    ];
+
+    let currentStoreMode = 'thattu';
+
+    function switchStoreMode(modeKey, btnEl) {
+      currentStoreMode = modeKey;
+
+      // Update active state in mode buttons and mode cards
+      document.querySelectorAll('.store-mode-btn, .thattu-mode-card').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll(`.store-mode-btn[data-mode="${modeKey}"], .thattu-mode-card[data-mode="${modeKey}"]`).forEach(b => b.classList.add('active'));
+
+      // Sync header and mobile navigation active highlight precisely (mutually exclusive)
+      document.querySelectorAll('.nav-link, .mobile-bottom-link').forEach(el => {
+        el.classList.remove('active');
+        const href = el.getAttribute('href') || '';
+        if (modeKey === 'thattu') {
+          if (href.includes('mode=thattu')) {
+            el.classList.add('active');
+          }
+        } else {
+          if (href === 'thattu.html') {
+            el.classList.add('active');
+          }
+        }
+      });
+
+
+
+
+      // Update browser URL query parameter seamlessly
+      try {
+        const newUrl = window.location.pathname + '?mode=' + modeKey;
+        window.history.pushState({ mode: modeKey }, '', newUrl);
+      } catch(e) {}
+
+      const heroTagline = document.getElementById('storeHeroTagline');
+      const heroTitle = document.getElementById('storeHeroTitle');
+      const heroDesc = document.getElementById('storeHeroDesc');
+      const subPills = document.getElementById('storeSubPills');
+
+      const specialBanner = document.getElementById('modeSpecialBanner');
+      const visualSection = document.getElementById('thattuModesVisualSection');
+      const modeBar = document.querySelector('.store-mode-bar');
+
+      if (modeKey === 'thattu') {
+        heroTagline.textContent = 'ROYAL TAMIL WEDDING SEERU';
+        heroTitle.textContent = '52 Heritage Seeru Plates & Hampers';
+        heroDesc.textContent = 'Authentic brass trays, decorated thali coconuts, floral Venis, dry fruit towers, and handcrafted return favor gifts designed for unforgettable wedding ceremonies.';
+        specialBanner.style.display = 'none';
+        if (visualSection) visualSection.style.display = 'none';
+        if (modeBar) modeBar.style.display = 'none';
+
+        subPills.innerHTML = `
+          <button class="cat-pill active" onclick="filterThattuCategory('all', this)">All 52 Thattus</button>
+          <button class="cat-pill" onclick="filterThattuCategory('coconuts', this)">🥥 Thali Coconuts</button>
+          <button class="cat-pill" onclick="filterThattuCategory('dryfruits', this)">🌰 Dry Fruits</button>
+          <button class="cat-pill" onclick="filterThattuCategory('sweets', this)">🍬 Sweets & Halwa</button>
+          <button class="cat-pill" onclick="filterThattuCategory('flowers', this)">🪷 Flowers & Veni</button>
+          <button class="cat-pill" onclick="filterThattuCategory('saree', this)">👗 Saree & Jewels</button>
+        `;
+        
+        // Show original 52 Thattu grid cards
+        document.querySelectorAll('#thattuStoreGrid .thattu-card').forEach(card => card.style.display = 'block');
+        document.querySelectorAll('#thattuStoreGrid .bridal-store-card, #thattuStoreGrid .occasion-store-card').forEach(card => card.remove());
+
+      } else if (modeKey === 'bride') {
+        if (visualSection) visualSection.style.display = 'block';
+        if (modeBar) modeBar.style.display = 'block';
+        heroTagline.textContent = 'BRIDAL BEAUTY & GLAMOUR STUDIO';
+
+        heroTitle.textContent = '52 Bridal Makeup & Styling Services';
+        heroDesc.textContent = 'Explore HD Muhurtham makeup, hair Poo Veni art, bridal mehendi, and traditional saree draping styles.';
+
+        specialBanner.style.display = 'block';
+        specialBanner.innerHTML = `
+          <div style="background:var(--bg-secondary); border:2px solid var(--accent-gold); border-radius:var(--radius-card); padding:24px 30px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; box-shadow:var(--shadow-gold);">
+            <div>
+              <span style="font-size:0.75rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">EXCLUSIVE BRIDAL PORTFOLIO</span>
+              <h3 style="font-family:var(--font-heading); font-size:1.6rem; color:var(--accent-maroon); margin:4px 0;">Looking for complete Bridal Transformation packages?</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Browse all 52 Bridal Makeup & Service modes with interactive Before/After sliders and artist booking.</p>
+            </div>
+            <a href="makeup.html" class="btn-primary" style="padding:12px 24px; font-size:0.88rem;">
+              <i class="fa-solid fa-crown"></i> Open Full Bridal Studio Page
+            </a>
+          </div>
+        `;
+
+        subPills.innerHTML = `
+          <button class="cat-pill active" onclick="filterBridalCategory('all', this)">All Bridal Services</button>
+          <button class="cat-pill" onclick="filterBridalCategory('makeup', this)">💄 HD Makeup</button>
+          <button class="cat-pill" onclick="filterBridalCategory('hair', this)">🌸 Hair Poo Veni</button>
+          <button class="cat-pill" onclick="filterBridalCategory('mehendi', this)">🌿 Mehendi Art</button>
+          <button class="cat-pill" onclick="filterBridalCategory('draping', this)">👗 Saree Draping</button>
+        `;
+
+        document.querySelectorAll('#thattuStoreGrid .thattu-card').forEach(card => card.style.display = 'none');
+        renderBridalGridInStore('all');
+
+
+      } else if (occasionData[modeKey]) {
+        if (visualSection) visualSection.style.display = 'block';
+        if (modeBar) modeBar.style.display = 'block';
+        const occ = occasionData[modeKey];
+
+        heroTagline.textContent = occ.tagline;
+        heroTitle.textContent = occ.title;
+        heroDesc.textContent = occ.desc;
+
+        specialBanner.style.display = 'block';
+        specialBanner.innerHTML = `
+          <div style="background:var(--bg-secondary); border:2px solid var(--accent-gold); border-radius:var(--radius-card); padding:24px 30px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; box-shadow:var(--shadow-gold);">
+            <div style="display:flex; gap:20px; align-items:center;">
+              <img src="${occ.img}" style="width:70px; height:70px; object-fit:cover; border-radius:50%; border:2px solid var(--accent-gold);">
+              <div>
+                <h3 style="font-family:var(--font-heading); font-size:1.4rem; color:var(--accent-maroon); margin-bottom:2px;">${occ.title}</h3>
+                <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">${occ.desc}</p>
+              </div>
+            </div>
+            <a href="${occ.pageUrl}" class="btn-primary" style="padding:10px 20px; font-size:0.85rem;">
+              <i class="fa-solid fa-sparkles"></i> Open Dedicated Occasion Studio
+            </a>
+          </div>
+        `;
+
+        subPills.innerHTML = `
+          <button class="cat-pill active">Featured ${occ.title.split(' ')[1]} Hampers</button>
+        `;
+
+        document.querySelectorAll('#thattuStoreGrid .thattu-card').forEach(card => card.style.display = 'none');
+        renderOccasionGridInStore(occ.items);
+      }
+    }
+
+    function renderBridalGridInStore(catFilter = 'all') {
+      const grid = document.getElementById('thattuStoreGrid');
+      document.querySelectorAll('#thattuStoreGrid .bridal-store-card, #thattuStoreGrid .occasion-store-card').forEach(card => card.remove());
+
+      const filtered = catFilter === 'all' ? makeupStoreItems : makeupStoreItems.filter(i => i.category === catFilter);
+
+      const html = filtered.map(m => `
+        <div class="product-card bridal-store-card" data-category="${m.category}">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="${m.img}" alt="${m.title}" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">BRIDAL MODE</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">${m.category.toUpperCase()}</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">${m.title}</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">${m.desc}</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹${m.price.toLocaleString()}</span>
+              <a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Bridal%20Service%20(${encodeURIComponent(m.title)})." target="_blank" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-brands fa-whatsapp"></i> Book
+              </a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      grid.insertAdjacentHTML('beforeend', html);
+    }
+
+    function filterBridalCategory(cat, btn) {
+      document.querySelectorAll('#storeSubPills .cat-pill').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderBridalGridInStore(cat);
+    }
+
+    function renderOccasionGridInStore(items) {
+      const grid = document.getElementById('thattuStoreGrid');
+      document.querySelectorAll('#thattuStoreGrid .bridal-store-card, #thattuStoreGrid .occasion-store-card').forEach(card => card.remove());
+
+      const html = items.map(item => `
+        <div class="product-card occasion-store-card" data-category="${item.category || 'occasion'}">
+          <div class="product-img-wrap thattu-img-wrap">
+            <img src="${item.img}" alt="${item.title}" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+            <span class="product-badge" style="position:absolute; top:8px; right:8px; font-size:0.68rem; padding:3px 8px;">OCCASION ITEM</span>
+          </div>
+          <div class="product-card-body">
+            <span style="font-size:0.7rem; font-weight:700; color:var(--accent-gold-dark); text-transform:uppercase; letter-spacing:1px;">OCCASION COLLECTION</span>
+            <h4 class="product-title" style="font-size:0.95rem; line-height:1.25; margin-top:2px;">${item.title}</h4>
+            <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">${item.desc}</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.05rem;">₹${item.price.toLocaleString()}</span>
+              <button onclick="addToCart('${item.id}', '${item.title.replace(/'/g, "\\'")}', ${item.price}, '${item.img}')" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+                <i class="fa-solid fa-plus"></i> Add
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      grid.insertAdjacentHTML('beforeend', html);
+    }
+
+    function filterThattuCategory(cat, btn) {
+      document.querySelectorAll('#storeSubPills .cat-pill').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const items = document.querySelectorAll('#thattuStoreGrid .thattu-card');
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-category');
+        if (cat === 'all' || itemCat === cat) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function searchThattuItems() {
+      const q = document.getElementById('thattuSearchInput').value.toLowerCase();
+      const items = document.querySelectorAll('#thattuStoreGrid .product-card');
+      items.forEach(item => {
+        const name = (item.getAttribute('data-name') || '').toLowerCase();
+        const text = item.innerText.toLowerCase();
+        if (name.includes(q) || text.includes(q)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function submitThattuDelivery() {
+      const name = document.getElementById('thattuCustName').value;
+      const phone = document.getElementById('thattuCustPhone').value;
+      const address = document.getElementById('thattuDeliveryAddress').value;
+      const date = document.getElementById('thattuDeliveryDate').value;
+      const notes = document.getElementById('thattuDeliveryNotes').value;
+
+      if (!name || !phone || !address) {
+        alert('Please enter your name, phone number, and delivery address.');
+        return;
+      }
+
+      const cart = JSON.parse(localStorage.getItem('vedha_cart') || '[]');
+      let cartText = cart.map(i => "  " + i.name + " (x" + i.qty + ") - ₹" + (i.price * i.qty).toLocaleString()).join("\n");
+      if (!cartText) cartText = 'Custom Thattu Enquiry';
+
+      const msg = "Vanakkam Vedha! I want to place a Thattu Delivery Order:\n\n*Customer:* " + name + "\n*Phone:* " + phone + "\n*Mandapam Address:* " + address + "\n*Event Date:* " + date + "\n*Notes:* " + notes + "\n\n*Selected Items:*\n" + cartText;
+      window.open("https://wa.me/919597244055?text=" + encodeURIComponent(msg), '_blank');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const mode = urlParams.get('mode') || urlParams.get('category');
+      if (mode && (mode === 'thattu' || mode === 'bride' || occasionData[mode])) {
+        switchStoreMode(mode);
+      } else {
+        // Default Store Hub view to Engagement Occasion Mode
+        switchStoreMode('engagement');
+      }
+    });
+
+  </script>
+</body>
+</html>
+

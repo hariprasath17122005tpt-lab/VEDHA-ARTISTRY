@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEDHA Tamil Calendar — Daily Panchangam, Nalla Neram & Subha Muhurtham Dates | 9597244055</title>
+  <meta name="description" content="VEDHA Tamil Daily Sheet Calendar (தினசரி நாட்காட்டி). Today's Nalla Neram, Rahu Kalam, Yamagandam, Tithi, Nakshatram & 2026 Subha Muhurtham dates.">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-brand">
+        <div class="logo-badge">
+          <span class="logo-badge-icon">🪷</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-main">VEDHA</span>
+          <span class="logo-sub">TAMIL CALENDAR</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="thattu.html" class="nav-link"><i class="fa-solid fa-store"></i> Store Hub</a></li>
+        <li><a href="thattu.html?mode=thattu" class="nav-link"><i class="fa-solid fa-basket-shopping"></i> Thattu Store (52)</a></li>
+        <li><a href="makeup.html" class="nav-link"><i class="fa-solid fa-crown"></i> Bridal (52)</a></li>
+        <li><a href="calendar.html" class="nav-link active"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+      </ul>
+
+
+
+
+      <div class="nav-icons">
+        <button class="nav-icon-btn" id="wishlistBtn" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="nav-icon-btn" id="cartBtn" title="Enquiry Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <span class="hero-tagline" style="color:var(--accent-gold-light);">DINA PANCHANGAM & MUHURTHAM</span>
+      <h1 class="page-hero-title">Tamil Panchangam & Subha Muhurtham</h1>
+      <p class="page-hero-desc">Plan your auspicious wedding date, Seemantham, and housewarming with daily Nalla Neram, Rahu Kalam, and 2026 Valarpirai Muhurtham calendars.</p>
+    </div>
+  </section>
+
+  <!-- Daily Panchangam Sheet Section -->
+  <section class="section-padding" id="panchangam">
+    <div class="container">
+      <h2 class="section-title">Tamil Daily Calendar Sheet</h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtitle">Select any date to instantly view Panchangam calculations and auspicious timing windows.</p>
+
+      <div class="daily-panchangam-frame">
+        <div class="panchangam-header">
+          <div style="margin-bottom:12px; font-size:1.1rem; letter-spacing:2px; color:var(--accent-gold-light);">SELECT CALENDAR DATE</div>
+          <input type="date" id="calendarPicker" value="2026-08-21" onchange="updatePanchangamSheet(this.value)" style="padding:10px 24px; border-radius:30px; border:2px solid var(--accent-gold); font-size:1.1rem; font-family:var(--font-heading); font-weight:700; color:var(--accent-maroon); background:#FFFDF8; cursor:pointer;">
+        </div>
+
+        <div style="text-align:center; padding-top:30px;">
+          <span id="sheetTamilMonth" style="font-size:1.3rem; font-weight:700; color:var(--accent-maroon); letter-spacing:2px;">AAVANI 05</span>
+          <div class="panchangam-date-large" id="sheetDayNum">21</div>
+          <span id="sheetDayName" style="font-size:1.2rem; text-transform:uppercase; letter-spacing:3px; color:var(--accent-gold-dark); font-weight:600;">FRIDAY (வெள்ளி)</span>
+        </div>
+
+        <div class="panchangam-grid">
+          <div class="panchangam-item">
+            <div class="panchangam-label">Nalla Neram (நல்ல நேரம்)</div>
+            <div class="panchangam-value" style="color:#2E7D32;">09:15 AM - 10:15 AM</div>
+            <div style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Evening: 04:45 PM - 05:45 PM</div>
+          </div>
+
+          <div class="panchangam-item">
+            <div class="panchangam-label">Gowri Nalla Neram (கௌரி)</div>
+            <div class="panchangam-value" style="color:#2E7D32;">12:15 PM - 01:15 PM</div>
+            <div style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Night: 06:30 PM - 07:30 PM</div>
+          </div>
+
+          <div class="panchangam-item">
+            <div class="panchangam-label">Rahu Kalam (ராகு காலம்)</div>
+            <div class="panchangam-value" style="color:#C62828;">10:30 AM - 12:00 PM</div>
+            <div style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Avoid major new starts</div>
+          </div>
+
+          <div class="panchangam-item">
+            <div class="panchangam-label">Yamagandam (எமகண்டம்)</div>
+            <div class="panchangam-value" style="color:#C62828;">03:00 PM - 04:30 PM</div>
+            <div style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Kuligai: 07:30 AM - 09:00 AM</div>
+          </div>
+
+          <div class="panchangam-item">
+            <div class="panchangam-label">Tithi & Paksham</div>
+            <div class="panchangam-value">Shukla Ashtami</div>
+            <div style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Valarpirai (Growing Moon)</div>
+          </div>
+
+          <div class="panchangam-item">
+            <div class="panchangam-label">Star (நட்சத்திரம்)</div>
+            <div class="panchangam-value">Anusham (அனுஷம்)</div>
+            <div style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">Yogam: Siddha Yogam</div>
+          </div>
+        </div>
+
+        <div style="padding:0 36px 36px 36px; text-align:center;">
+          <a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20reserve%20Seeru%20plates%20for%20an%20auspicious%20date." target="_blank" class="btn-primary" style="width:100%;">
+            <i class="fa-brands fa-whatsapp"></i> Reserve Seeru & Decor for This Date via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2026 Auspicious Muhurtham Dates Table -->
+  <section class="section-padding" id="muhurtham-list" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">2026 Subha Muhurtham Dates</h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtitle">Verified auspicious wedding dates for Tamil marriage ceremonies, Seemantham, and housewarming.</p>
+
+      <div style="overflow-x:auto;">
+        <table class="muhurtham-table">
+          <thead>
+            <tr>
+              <th>Date & Day</th>
+              <th>Tamil Date</th>
+              <th>Auspicious Timing</th>
+              <th>Natchathiram / Tithi</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>27 August 2026 (Thu)</strong></td>
+              <td>Avani 11</td>
+              <td>06:00 AM - 07:30 AM</td>
+              <td>Uthiratadhi / Valarpirai</td>
+              <td><a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20reserve%20Seeru%20for%2027%20Aug%202026%20Muhurtham." target="_blank" class="btn-primary" style="padding:8px 16px; font-size:0.85rem;"><i class="fa-brands fa-whatsapp"></i> Reserve</a></td>
+            </tr>
+            <tr>
+              <td><strong>03 September 2026 (Thu)</strong></td>
+              <td>Avani 18</td>
+              <td>09:15 AM - 10:30 AM</td>
+              <td>Rohini / Valarpirai</td>
+              <td><a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20reserve%20Seeru%20for%2003%20Sep%202026%20Muhurtham." target="_blank" class="btn-primary" style="padding:8px 16px; font-size:0.85rem;"><i class="fa-brands fa-whatsapp"></i> Reserve</a></td>
+            </tr>
+            <tr>
+              <td><strong>14 September 2026 (Mon)</strong></td>
+              <td>Avani 29</td>
+              <td>06:15 AM - 07:45 AM</td>
+              <td>Swathi / Valarpirai</td>
+              <td><a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20reserve%20Seeru%20for%2014%20Sep%202026%20Muhurtham." target="_blank" class="btn-primary" style="padding:8px 16px; font-size:0.85rem;"><i class="fa-brands fa-whatsapp"></i> Reserve</a></td>
+            </tr>
+            <tr>
+              <td><strong>25 October 2026 (Sun)</strong></td>
+              <td>Purattasi 08</td>
+              <td>07:30 AM - 09:00 AM</td>
+              <td>Anusham / Shukla Paksham</td>
+              <td><a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20reserve%20Seeru%20for%2025%20Oct%202026%20Muhurtham." target="_blank" class="btn-primary" style="padding:8px 16px; font-size:0.85rem;"><i class="fa-brands fa-whatsapp"></i> Reserve</a></td>
+            </tr>
+            <tr>
+              <td><strong>12 November 2026 (Thu)</strong></td>
+              <td>Ippasi 26</td>
+              <td>06:00 AM - 07:30 AM</td>
+              <td>Uthiram / Valarpirai</td>
+              <td><a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20reserve%20Seeru%20for%2012%20Nov%202026%20Muhurtham." target="_blank" class="btn-primary" style="padding:8px 16px; font-size:0.85rem;"><i class="fa-brands fa-whatsapp"></i> Reserve</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 VEDHA Traditions. All Rights Reserved. WhatsApp / Concierge: 9597244055.</p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-bottom-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="thattu.html" class="mobile-bottom-link"><i class="fa-solid fa-store"></i><span>Store</span></a>
+    <a href="thattu.html?mode=thattu" class="mobile-bottom-link"><i class="fa-solid fa-basket-shopping"></i><span>Thattu</span></a>
+    <a href="makeup.html" class="mobile-bottom-link"><i class="fa-solid fa-crown"></i><span>Bridal</span></a>
+    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span>Wishlist</span><b id="mobileWishlistCount">0</b></button>
+    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="cart" aria-label="Enquiry cart"><i class="fa-solid fa-bag-shopping"></i><span>Cart</span><b id="mobileCartCount">0</b></button>
+  </nav>
+
+
+
+  <!-- Drawer Overlay & Drawers -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Cart Drawer -->
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-solid fa-bag-shopping"></i> Enquiry Cart</h3>
+      <button class="drawer-close" id="closeCartBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItemsContainer"></div>
+    <div class="drawer-footer">
+      <div style="display:flex; justify-content:space-between; margin-bottom:16px; font-weight:600; font-size:1.1rem; font-family:var(--font-heading);">
+        <span>Est. Total:</span>
+        <span id="cartTotalAmount" style="color:var(--accent-maroon);">₹0</span>
+      </div>
+      <button class="btn-primary" id="waCheckoutBtn" style="width:100%;">
+        <i class="fa-brands fa-whatsapp"></i> Send Order via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-regular fa-heart"></i> Saved Wishlist</h3>
+      <button class="drawer-close" id="closeWishlistBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistItemsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function updatePanchangamSheet(dateStr) {
+      if (!dateStr) return;
+      const d = new Date(dateStr);
+      const dayNum = d.getDate();
+      const days = ['Sunday (ஞாயிறு)', 'Monday (திங்கள்)', 'Tuesday (செவ்வாய்)', 'Wednesday (புதன்)', 'Thursday (வியாழன்)', 'Friday (வெள்ளி)', 'Saturday (சனி)'];
+      
+      document.getElementById('sheetDayNum').innerText = dayNum;
+      document.getElementById('sheetDayName').innerText = days[d.getDay()];
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEDHA Occasions — 7 Dedicated Luxury Ceremony & Gift Modes | 9597244055</title>
+  <meta name="description" content="Explore VEDHA's 7 Dedicated Luxury Occasion Modes: Engagement, Seemantham, Housewarming, Deepavali, Pongal, Return Gifts, and Corporate Gifting.">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Kolam Loading Animation Overlay -->
+  <div id="kolamLoader">
+    <div class="kolam-spinner-wrap">
+      <svg class="kolam-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" stroke="#C89B3C" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <circle cx="50" cy="50" r="35" stroke="#7B1E2B" stroke-width="1"/>
+        <path d="M50 10 C50 30, 30 50, 50 50 C70 50, 50 70, 50 90" stroke="#C89B3C" stroke-width="2"/>
+        <path d="M10 50 C30 50, 50 30, 50 50 C50 70, 70 50, 90 50" stroke="#C89B3C" stroke-width="2"/>
+        <circle cx="50" cy="50" r="6" fill="#7B1E2B"/>
+      </svg>
+    </div>
+    <div class="kolam-brand-text">VEDHA</div>
+    <div class="kolam-sub-text">OCCASIONS STORE</div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-brand">
+        <div class="logo-badge">
+          <span class="logo-badge-icon">🪷</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-main">VEDHA</span>
+          <span class="logo-sub">OCCASIONS STORE</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="thattu.html" class="nav-link"><i class="fa-solid fa-store"></i> Store Hub</a></li>
+        <li><a href="thattu.html?mode=thattu" class="nav-link"><i class="fa-solid fa-basket-shopping"></i> Thattu Store (52)</a></li>
+        <li><a href="makeup.html" class="nav-link"><i class="fa-solid fa-crown"></i> Bridal (52)</a></li>
+        <li><a href="calendar.html" class="nav-link"><i class="fa-solid fa-calendar-days"></i> Calendar</a></li>
+      </ul>
+
+
+
+
+      <div class="nav-icons">
+        <button class="nav-icon-btn" id="wishlistBtn" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="nav-icon-btn" id="cartBtn" title="Enquiry Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <span class="hero-tagline" style="color:var(--accent-gold-light);">DEDICATED CEREMONY MODES</span>
+      <h1 class="page-hero-title">Shop by Dedicated Occasion Mode</h1>
+      <p class="page-hero-desc">Bespoke collections crafted specifically for Engagement, Baby Shower, Housewarming, Deepavali, Pongal, Return Gifts, and Corporate Milestones.</p>
+    </div>
+  </section>
+
+  <!-- Occasions Tab Bar -->
+  <div class="store-filter-bar" style="top:75px;">
+    <div class="container store-filter-inner">
+      <div class="store-cat-pills" style="justify-content:center; gap:12px;">
+        <button class="cat-pill active" onclick="switchOccasionMode('engagement', this)">🌸 Engagement</button>
+        <button class="cat-pill" onclick="switchOccasionMode('seemantham', this)">🪷 Seemantham</button>
+        <button class="cat-pill" onclick="switchOccasionMode('housewarming', this)">🪔 Housewarming</button>
+        <button class="cat-pill" onclick="switchOccasionMode('deepavali', this)">🎇 Deepavali</button>
+        <button class="cat-pill" onclick="switchOccasionMode('pongal', this)">🌾 Pongal</button>
+        <button class="cat-pill" onclick="switchOccasionMode('returngifts', this)">🎁 Return Gifts</button>
+        <button class="cat-pill" onclick="switchOccasionMode('corporate', this)">💼 Corporate</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Occasions Portfolio Showcase -->
+  <section class="section-padding" style="padding-top:40px;">
+    <div class="container">
+      <div id="occasionBanner" style="background:var(--bg-secondary); border:2px solid var(--accent-gold); border-radius:var(--radius-card); padding:30px; margin-bottom:40px; text-align:center;">
+        <!-- Banner dynamically populated -->
+      </div>
+
+      <h3 id="occasionGridTitle" style="font-family:var(--font-heading); font-size:1.8rem; color:var(--accent-maroon); margin-bottom:20px; text-align:center;"></h3>
+
+      <div class="products-grid" id="occasionGrid">
+        <!-- Products dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 VEDHA Traditions. All Rights Reserved. Celebrating Tamil Traditions with Elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-bottom-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="thattu.html" class="mobile-bottom-link"><i class="fa-solid fa-store"></i><span>Store</span></a>
+    <a href="thattu.html?mode=thattu" class="mobile-bottom-link"><i class="fa-solid fa-basket-shopping"></i><span>Thattu</span></a>
+    <a href="makeup.html" class="mobile-bottom-link"><i class="fa-solid fa-crown"></i><span>Bridal</span></a>
+    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span>Wishlist</span><b id="mobileWishlistCount">0</b></button>
+    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="cart" aria-label="Enquiry cart"><i class="fa-solid fa-bag-shopping"></i><span>Cart</span><b id="mobileCartCount">0</b></button>
+  </nav>
+
+
+
+  <!-- Drawer Overlay & Drawers -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-solid fa-bag-shopping"></i> Enquiry Cart</h3>
+      <button class="drawer-close" id="closeCartBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItemsContainer"></div>
+    <div class="drawer-footer">
+      <div style="display:flex; justify-content:space-between; margin-bottom:16px; font-weight:600; font-size:1.1rem; font-family:var(--font-heading);">
+        <span>Est. Total:</span>
+        <span id="cartTotalAmount" style="color:var(--accent-maroon);">₹0</span>
+      </div>
+      <button class="btn-primary" id="waCheckoutBtn" style="width:100%;">
+        <i class="fa-brands fa-whatsapp"></i> Send Order via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <div class="drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-regular fa-heart"></i> Saved Wishlist</h3>
+      <button class="drawer-close" id="closeWishlistBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistItemsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    const occasionData = {
+      engagement: {
+        title: "🌸 Engagement (Nichayathartham) Mode",
+        desc: "Royal velvet ring exchange trays, pearl & rose garlands, dry fruit hampers, and silver ring presentation boxes.",
+        img: "images/engagement_ring_tray.png",
+        items: [
+          { id: "eng_1", title: "Royal Velvet Ring Exchange Tray", price: 15000, desc: "Handcrafted velvet tray with satin cushion & LED ring spotlight.", img: "images/engagement_ring_tray.png" },
+          { id: "eng_2", title: "Pearl & Rose Garland Engagement Set", price: 18500, desc: "Matching fresh rose & pearl garland pair for bride & groom.", img: "images/engagement_ring_tray.png" },
+          { id: "eng_3", title: "Dry Fruit Pyramid & Silk Shawl Hamper", price: 12000, desc: "Multi-tier almond, cashew tower with pure Zari silk shawl.", img: "images/chocolate_dryfruit_plate.png" },
+          { id: "eng_4", title: "Silver Plated Coin & Ring Display Box", price: 22000, desc: "Hallmarked silver-plated box with velvet lining.", img: "images/engagement_ring_tray.png" }
+        ]
+      },
+      seemantham: {
+        title: "🪷 Seemantham (Baby Shower) Mode",
+        desc: "Traditional carved fruit lotus baskets, glass bangle towers, silver souvenirs, and Mysore sandalwood favors.",
+        img: "images/seemantham_bangle_fruit.png",
+        items: [
+          { id: "see_1", title: "Carved Lotus Fruit Basket & Bangle Set", price: 9500, desc: "Hand-carved lotus watermelon, apples & 108 glass bangles.", img: "images/seemantham_bangle_fruit.png" },
+          { id: "see_2", title: "Silver Bangles & Turmeric Favor Trays", price: 14000, desc: "Pure silver baby bangles with organic Srivilliputhur turmeric.", img: "images/seemantham_bangle_fruit.png" },
+          { id: "see_3", title: "Mysore Sandal & Glass Bangle Tower", price: 8000, desc: "Handcrafted wooden bangle tree wrapped in jasmine flowers.", img: "images/seemantham_bangle_fruit.png" },
+          { id: "see_4", title: "Royal Brass Pot & Sacred Oil Set", price: 11500, desc: "Polished brass chembu with sacred herbal oil & kumkum.", img: "images/carved_coconut_seer.png" }
+        ]
+      },
+      housewarming: {
+        title: "🪔 Housewarming (Grihapravesam) Mode",
+        desc: "Auspicious brass Kuthu Vilakku oil lamps, turmeric kumkum boxes, mango leaf toran sets, and Panchaloha idols.",
+        img: "images/housewarming_brass_vilakku.png",
+        items: [
+          { id: "hw_1", title: "Polished Brass Kuthu Vilakku & Diya Set", price: 16500, desc: "Pair of 3-foot traditional brass oil lamps with peacock pinnacle.", img: "images/housewarming_brass_vilakku.png" },
+          { id: "hw_2", title: "Turmeric Kumkum Brass Container Box", price: 7500, desc: "Engraved brass favor box filled with pure Kumkum & Turmeric.", img: "images/housewarming_brass_vilakku.png" },
+          { id: "hw_3", title: "Mango Leaf & Fresh Flower Toran Set", price: 6000, desc: "Traditional doorway garland handcrafted with fresh marigolds.", img: "images/housewarming_brass_vilakku.png" },
+          { id: "hw_4", title: "Panchaloha Divine Kamadhenu Idol", price: 28000, desc: "Handcrafted 5-metal sacred cow & calf sculpture for altar.", img: "images/housewarming_brass_vilakku.png" }
+        ]
+      },
+      deepavali: {
+        title: "🎇 Deepavali Collections Mode",
+        desc: "Pure ghee sweets, artisanal brass diya hampers, gold vark Kaju Katli trays, and gourmet seed pyramids.",
+        img: "images/deepavali_diya_seeru.png",
+        items: [
+          { id: "dp_1", title: "Pure Ghee Mysore Pak & Laddu Box", price: 8500, desc: "Traditional Tirunelveli ghee halwa & melt-in-mouth Mysore pak.", img: "images/deepavali_diya_seeru.png" },
+          { id: "dp_2", title: "Artisanal Brass Diya & Dry Fruit Box", price: 10500, desc: "Pair of brass lotus oil lamps with premium pistachio hamper.", img: "images/deepavali_diya_seeru.png" },
+          { id: "dp_3", title: "Royal Gold Vark Kaju Katli Tray", price: 12500, desc: "Silver & gold leaf topped cashew sweets in velvet presentation box.", img: "images/deepavali_diya_seeru.png" },
+          { id: "dp_4", title: "Premium Nut & Seed Gourmet Hamper", price: 9000, desc: "Curated almonds, walnuts, dates & figs in brass compartment tray.", img: "images/deepavali_diya_seeru.png" }
+        ]
+      },
+      pongal: {
+        title: "🌾 Pongal Celebrations Mode",
+        desc: "Decorated terracotta harvest pots, organic sugarcane hampers, brass milk pots, and fresh marigold favors.",
+        img: "images/pongal_harvest_pot.png",
+        items: [
+          { id: "pg_1", title: "Decorated Terracotta Pot & Sugarcane Set", price: 7000, desc: "Hand-painted clay pot tied with fresh turmeric plant & sugarcane.", img: "images/pongal_harvest_pot.png" },
+          { id: "pg_2", title: "Organic Jaggery & Rice Harvest Hamper", price: 5500, desc: "Pure organic jaggery, raw red rice & cardamom gift basket.", img: "images/pongal_harvest_pot.png" },
+          { id: "pg_3", title: "Traditional Brass Milk Pot & Ladle", price: 11000, desc: "Polished brass vessel for sacred Pongal boiling ceremony.", img: "images/pongal_harvest_pot.png" },
+          { id: "pg_4", title: "Festive Marigold Garland & Sweets Set", price: 8500, desc: "Fresh yellow marigold garland paired with sugarcane halwa.", img: "images/pongal_harvest_pot.png" }
+        ]
+      },
+      returngifts: {
+        title: "🎁 Return Gifts (Tamboolam) Mode",
+        desc: "Handcrafted brass kumkum boxes, silk tote favor bags, pure silver coins, and Mysore sandalwood kits.",
+        img: "images/return_gifts_tamboolam.png",
+        items: [
+          { id: "rg_1", title: "Handcrafted Brass Kumkum Box (25 Pcs)", price: 6250, desc: "Set of 25 peacock embossed brass kumkum chimizh favor boxes.", img: "images/return_gifts_tamboolam.png" },
+          { id: "rg_2", title: "Silk Screened Jute Gift Bags (50 Pcs)", price: 8500, desc: "Set of 50 traditional gold printed favor bags.", img: "images/return_gifts_tamboolam.png" },
+          { id: "rg_3", title: "Pure Silver Plated Lakshmi Coins (20 Pcs)", price: 14000, desc: "Hallmarked silver coins packaged in velvet gift boxes.", img: "images/return_gifts_tamboolam.png" },
+          { id: "rg_4", title: "Sandalwood Soap & Turmeric Kit (30 Pcs)", price: 7500, desc: "Organic Mysore sandalwood soap & turmeric favor set.", img: "images/return_gifts_tamboolam.png" }
+        ]
+      },
+      corporate: {
+        title: "💼 Corporate & Festive Gifting Mode",
+        desc: "Bespoke executive gift hampers, brass journals, custom velvet chests, and silver plated urn sets.",
+        img: "images/pearl_velvet_tray.png",
+        items: [
+          { id: "corp_1", title: "Executive Brass Pen & Leather Journal Gift", price: 18000, desc: "Hand-embossed brass pen with genuine leather journal set.", img: "images/pearl_velvet_tray.png" },
+          { id: "corp_2", title: "Custom Branded Velvet Hamper Box", price: 25000, desc: "Luxury velvet hamper customized with corporate metal logo.", img: "images/pearl_velvet_tray.png" },
+          { id: "corp_3", title: "Artisanal Tea & Dry Fruit Wooden Chest", price: 15000, desc: "Carved rosewood chest with premium teas & roasted nuts.", img: "images/chocolate_dryfruit_plate.png" },
+          { id: "corp_4", title: "Royal Silver Plated Tray & Urn Set", price: 32000, desc: "Hallmarked silver-plated tray set for VIP corporate gifting.", img: "images/pearl_velvet_tray.png" }
+        ]
+      }
+    };
+
+    function renderOccasionMode(modeKey) {
+      const data = occasionData[modeKey] || occasionData.engagement;
+      const banner = document.getElementById('occasionBanner');
+      const gridTitle = document.getElementById('occasionGridTitle');
+      const grid = document.getElementById('occasionGrid');
+
+      banner.innerHTML = `
+        <div style="display:flex; gap:30px; align-items:center; flex-wrap:wrap; justify-content:center;">
+          <img src="${data.img}" style="width:140px; height:140px; object-fit:cover; border-radius:50%; border:3px solid var(--accent-gold); box-shadow:var(--shadow-gold);">
+          <div style="max-width:600px; text-align:left;">
+            <h2 style="font-family:var(--font-heading); font-size:2rem; color:var(--accent-maroon); margin-bottom:8px;">${data.title}</h2>
+            <p style="font-size:0.95rem; color:var(--text-muted); line-height:1.6;">${data.desc}</p>
+          </div>
+        </div>
+      `;
+
+      gridTitle.textContent = `${data.title} Showcase`;
+
+      grid.innerHTML = data.items.map(item => `
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="${item.img}" alt="${item.title}" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="product-card-body">
+            <h4 class="product-title" style="font-size:1rem; line-height:1.3; color:var(--accent-maroon); font-weight:700;">${item.title}</h4>
+            <p class="product-desc" style="font-size:0.78rem; color:var(--text-muted); margin-bottom:12px;">${item.desc}</p>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="product-price" style="font-size:1.1rem;">₹${item.price.toLocaleString()}</span>
+              <button onclick="addToCart('${item.id}', '${item.title.replace(/'/g, "\\'")}', ${item.price}, '${item.img}')" class="btn-primary" style="padding:6px 14px; font-size:0.8rem;">
+                <i class="fa-solid fa-plus"></i> Add to Enquiry
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function switchOccasionMode(modeKey, btn) {
+      document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
+      if (btn) {
+        btn.classList.add('active');
+      } else {
+        const targetBtn = document.querySelector(`.cat-pill[onclick*="'${modeKey}'"]`);
+        if (targetBtn) targetBtn.classList.add('active');
+      }
+      try {
+        window.history.pushState({ mode: modeKey }, '', '?mode=' + modeKey);
+      } catch(e) {}
+      renderOccasionMode(modeKey);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const mode = urlParams.get('mode') || 'engagement';
+      switchOccasionMode(mode);
+    });
+  </script>
+</body>
+</html>
+
