@@ -14,7 +14,7 @@ const SYSTEM_PROMPT = `You are a warm, highly refined luxury AI Concierge for VE
 
 About VEDHA:
 - Philosophy: Preserving Tamil heritage with Sabyasachi & Tanishq inspired luxury aesthetics
-- Phone / WhatsApp: +91 9597244055
+- Phone / WhatsApp: +91 9791014662
 - Services: Handcrafted Royal Seeru Plates, Engagement Hampers, Return Gifts, Doorstep HD Bridal Makeup, Poo Veni Hair Art
 - Locations: Chennai, Madurai, Coimbatore, Tiruppur, Salem, Trichy & across Tamil Nadu
 
@@ -23,14 +23,14 @@ Collections & Pricing:
 - Bridal Makeup Packages: Essential (₹2,500), Signature Kalyanam (₹4,500), Royal Empress (₹7,500)
 - Return Gifts: ₹250 - ₹1,500 per piece (Custom Brass Kumkum Boxes, Silk Bags, Silver Coins)
 
-Tone: Elegant, polite, respectful, mixing English with Tamil honorifics (Vanakkam, Vanakkam Ayya/Amma, Nandri). Keep responses concise, helpful, and direct customers to WhatsApp 9597244055 for bespoke bookings.`;
+Tone: Elegant, polite, respectful, mixing English with Tamil honorifics (Vanakkam, Vanakkam Ayya/Amma, Nandri). Keep responses concise, helpful, and direct customers to WhatsApp 9791014662 for bespoke bookings.`;
 
 // Intelligent fallback AI engine when offline or no API key
 function getSmartFallbackReply(userMessage) {
   const q = userMessage.toLowerCase();
   
   if (q.includes('seeru') || q.includes('plate') || q.includes('fruit') || q.includes('sweet') || q.includes('thattu')) {
-    return "Vanakkam! 🌸 VEDHA crafts exquisite Tamil Nadu Seeru Plates starting from ₹1,200 up to grand ₹25,000 Royal Brass & Silver Sets. Explore our live Thattu Store or customize your set! Would you like to reserve via WhatsApp (+91 95972 44055)?";
+    return "Vanakkam! 🌸 VEDHA crafts exquisite Tamil Nadu Seeru Plates starting from ₹1,200 up to grand ₹25,000 Royal Brass & Silver Sets. Explore our live Thattu Store or customize your set! Would you like to reserve via WhatsApp (+91 97910 14662)?";
   }
   
   if (q.includes('makeup') || q.includes('bridal') || q.includes('beauty') || q.includes('price') || q.includes('cost') || q.includes('rate')) {
@@ -38,11 +38,11 @@ function getSmartFallbackReply(userMessage) {
   }
   
   if (q.includes('home') || q.includes('visit') || q.includes('location') || q.includes('coimbatore') || q.includes('chennai') || q.includes('madurai')) {
-    return "Vanakkam! 🏛️ VEDHA provides doorstep venue setup and bridal services across Chennai, Madurai, Coimbatore, Salem, Tiruppur, and all districts of Tamil Nadu. Contact our atelier directly at +91 95972 44055!";
+    return "Vanakkam! 🏛️ VEDHA provides doorstep venue setup and bridal services across Chennai, Madurai, Coimbatore, Salem, Tiruppur, and all districts of Tamil Nadu. Contact our atelier directly at +91 97910 14662!";
   }
   
   if (q.includes('book') || q.includes('contact') || q.includes('whatsapp') || q.includes('phone') || q.includes('number')) {
-    return "Vanakkam! 🌸 You can easily connect with our luxury wedding consultants via WhatsApp at +91 95972 44055 or click the WhatsApp buttons on our platform. Nandri!";
+    return "Vanakkam! 🌸 You can easily connect with our luxury wedding consultants via WhatsApp at +91 97910 14662 or click the WhatsApp buttons on our platform. Nandri!";
   }
   
   return "Vanakkam! 🪷 Welcome to VEDHA Traditions. We craft bespoke Tamil Wedding Seeru Plates, Luxury Hampers, Return Gifts, and Doorstep HD Bridal Makeup. How may I assist your celebration today?";

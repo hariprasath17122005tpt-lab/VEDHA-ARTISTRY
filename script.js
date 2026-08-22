@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 800);
   }
 
-  // Adjust video playback speed to make it slower and more elegant (0.75x)
+  // Adjust video playback speed to make it slower and more elegant (0.50x)
   document.querySelectorAll('video').forEach(vid => {
-    vid.playbackRate = 0.75;
+    vid.playbackRate = 0.50;
     vid.addEventListener('loadedmetadata', () => {
-      vid.playbackRate = 0.75;
+      vid.playbackRate = 0.50;
     });
     vid.play().catch(() => {});
   });
@@ -34,8 +34,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Global State
-  let cart = JSON.parse(localStorage.getItem('vedha_cart')) || [];
-  let wishlist = JSON.parse(localStorage.getItem('vedha_wishlist')) || [];
+  const storage = {
+    get(key) {
+      try {
+        return localStorage.getItem(key);
+      } catch (error) {
+        return null;
+      }
+    },
+    set(key, value) {
+      try {
+        localStorage.setItem(key, value);
+      } catch (error) {
+        // The page remains usable when private browsing blocks storage.
+      }
+    }
+  };
+
+  function loadStoredList(key) {
+    try {
+      const value = JSON.parse(storage.get(key) || '[]');
+      return Array.isArray(value) ? value : [];
+    } catch (error) {
+      return [];
+    }
+  }
+
+  let cart = loadStoredList('vedha_cart');
+  let wishlist = loadStoredList('vedha_wishlist');
 
   // Navbar Scroll & Back-to-Top Effect
   const navbar = document.getElementById('navbar');
@@ -127,16 +153,23 @@ document.addEventListener('DOMContentLoaded', () => {
   if (closeWishlistBtn) closeWishlistBtn.addEventListener('click', closeDrawers);
   if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawers);
 
-  document.querySelectorAll('.mobile-bottom-action').forEach(action => {
-    action.addEventListener('click', () => {
-      if (action.dataset.mobileAction === 'cart') {
-        renderCart();
-        openDrawer(cartDrawer);
-      } else {
-        renderWishlist();
-        openDrawer(wishlistDrawer);
-      }
-    });
+  function openMobileDrawer(actionName) {
+    if (actionName === 'cart') {
+      renderCart();
+      openDrawer(cartDrawer);
+      return;
+    }
+    if (actionName === 'wishlist') {
+      renderWishlist();
+      openDrawer(wishlistDrawer);
+    }
+  }
+
+  document.addEventListener('click', (event) => {
+    const action = event.target.closest('[data-mobile-action]');
+    if (!action) return;
+    event.preventDefault();
+    openMobileDrawer(action.dataset.mobileAction);
   });
 
   // Cart Functions
@@ -147,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       cart.push({ id, name, price, img, qty: 1 });
     }
-    localStorage.setItem('vedha_cart', JSON.stringify(cart));
+    storage.set('vedha_cart', JSON.stringify(cart));
     updateBadges();
     showToast(`"${name}" added to your Seeru enquiry cart.`);
   };
@@ -183,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.removeFromCart = function(id) {
     cart = cart.filter(item => item.id !== id);
-    localStorage.setItem('vedha_cart', JSON.stringify(cart));
+    storage.set('vedha_cart', JSON.stringify(cart));
     updateBadges();
     renderCart();
   };
@@ -198,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
       wishlist.push({ id, name, price, img });
       showToast(`Saved "${name}" to Wishlist.`);
     }
-    localStorage.setItem('vedha_wishlist', JSON.stringify(wishlist));
+    storage.set('vedha_wishlist', JSON.stringify(wishlist));
     updateBadges();
   };
 
@@ -223,6 +256,30 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
+  function createOrderPrescription(items, title) {
+    let total = 0;
+    const lines = items.map((item, index) => {
+      const itemTotal = item.price * (item.qty || 1);
+      total += itemTotal;
+      return `${index + 1}. ${item.name}\n   Code: ${item.id} | Qty: ${item.qty || 1}\n   Unit price: ₹${item.price.toLocaleString()} | Amount: ₹${itemTotal.toLocaleString()}`;
+    });
+
+    return `V E D H A  |  ORDER PRESCRIPTION\n` +
+      `----------------------------------------\n` +
+      `Request: ${title}\n` +
+      `Date: ${new Date().toLocaleDateString('en-IN')}\n\n` +
+      `SELECTED ITEMS\n` +
+      `${lines.join('\n\n')}\n\n` +
+      `----------------------------------------\n` +
+      `ESTIMATED TOTAL: ₹${total.toLocaleString()}\n\n` +
+      `CUSTOMER DETAILS\n` +
+      `Name: \n` +
+      `Event / occasion: \n` +
+      `Delivery date: \n` +
+      `Delivery location: \n\n` +
+      `Please confirm availability, customization, delivery charges, and final quotation.`;
+  }
+
   // WhatsApp Cart Enquiry Checkout
   const waCheckoutBtn = document.getElementById('waCheckoutBtn');
   if (waCheckoutBtn) {
@@ -231,15 +288,8 @@ document.addEventListener('DOMContentLoaded', () => {
         showToast('Your cart is empty.');
         return;
       }
-      let msg = "Vanakkam Vedha! I would like to place an enquiry for the following Seeru items:\n\n";
-      let total = 0;
-      cart.forEach((item, index) => {
-        const itemTotal = item.price * item.qty;
-        total += itemTotal;
-        msg += `${index + 1}. *${item.name}* (Qty: ${item.qty}) - ₹${itemTotal.toLocaleString()}\n`;
-      });
-      msg += `\n*Estimated Total:* ₹${total.toLocaleString()}\n\nPlease confirm availability and custom options.`;
-      window.open(`https://wa.me/919597244055?text=${encodeURIComponent(msg)}`, '_blank');
+      const msg = createOrderPrescription(cart, 'Seeru catalogue enquiry');
+      window.open(`https://wa.me/919791014662?text=${encodeURIComponent(msg)}`, '_blank');
     });
   }
 
@@ -300,14 +350,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const orderCustomBuilderBtn = document.getElementById('orderCustomBuilderBtn');
   if (orderCustomBuilderBtn) {
     orderCustomBuilderBtn.addEventListener('click', () => {
-      const msg = `Vanakkam Vedha! I have designed a custom Seeru package using your Custom Builder:\n\n` +
-        `*Occasion:* ${builderSelection.occasion || 'Wedding'}\n` +
-        `*Plate Style:* ${builderSelection.style}\n` +
-        `*Flowers:* ${builderSelection.flowers}\n` +
-        `*Sweets:* ${builderSelection.sweets}\n` +
-        `*Return Gifts:* ${builderSelection.gift}\n\n` +
-        `Please contact me to finalize details and deliver to our venue.`;
-      window.open(`https://wa.me/919597244055?text=${encodeURIComponent(msg)}`, '_blank');
+      const customItems = [
+        { id: 'custom-tray', name: `Custom Seeru Tray - ${builderSelection.occasion || 'Wedding'}`, price: (stylePrice[builderSelection.style] || 12000), qty: 1 },
+        { id: 'custom-flowers', name: `Flowers - ${builderSelection.flowers}`, price: (flowerPrice[builderSelection.flowers] || 4000), qty: 1 },
+        { id: 'custom-sweets', name: `Sweets - ${builderSelection.sweets}`, price: (sweetsPrice[builderSelection.sweets] || 5000), qty: 1 },
+        { id: 'custom-gifts', name: `Return Gifts - ${builderSelection.gift}`, price: (giftPrice[builderSelection.gift] || 3000), qty: 1 }
+      ];
+      const msg = createOrderPrescription(customItems, `Custom builder: ${builderSelection.style}`);
+      window.open(`https://wa.me/919791014662?text=${encodeURIComponent(msg)}`, '_blank');
     });
   }
 

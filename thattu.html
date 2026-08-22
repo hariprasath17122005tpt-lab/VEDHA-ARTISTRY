@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VEDHA Thattu Store — 52 Luxury Seeru Plates, Hampers & Return Gifts | 9597244055</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>VEDHA Thattu Store — 52 Luxury Seeru Plates, Hampers & Return Gifts | 9791014662</title>
   <meta name="description" content="Explore VEDHA's 52 Luxury South Indian Wedding Seeru Plates, Dry Fruit Hampers, Poo Veni, Turmeric Kumkum favors & Custom Brass Trays. Instant venue delivery across Tamil Nadu.">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260822b">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -1109,7 +1109,7 @@
         </div>
 
         <button onclick="submitThattuDelivery()" class="btn-primary" style="width:100%; padding:14px;">
-          <i class="fa-brands fa-whatsapp"></i> Dispatch Order to Concierge (WhatsApp 9597244055)
+          <i class="fa-brands fa-whatsapp"></i> Dispatch Order to Concierge (WhatsApp 9791014662)
         </button>
       </div>
     </div>
@@ -1119,7 +1119,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom">
-        <p>© 2026 VEDHA Traditions. All Rights Reserved. WhatsApp / Concierge: 9597244055.</p>
+        <p>© 2026 VEDHA Traditions. All Rights Reserved. WhatsApp / Concierge: 9791014662.</p>
       </div>
     </div>
   </footer>
@@ -1129,8 +1129,8 @@
     <a href="thattu.html" class="mobile-bottom-link active"><i class="fa-solid fa-store"></i><span>Store</span></a>
     <a href="thattu.html?mode=thattu" class="mobile-bottom-link"><i class="fa-solid fa-basket-shopping"></i><span>Thattu</span></a>
     <a href="makeup.html" class="mobile-bottom-link"><i class="fa-solid fa-crown"></i><span>Bridal</span></a>
-    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span>Wishlist</span><b id="mobileWishlistCount">0</b></button>
-    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="cart" aria-label="Enquiry cart"><i class="fa-solid fa-bag-shopping"></i><span>Cart</span><b id="mobileCartCount">0</b></button>
+    <a href="#wishlistDrawer" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span>Wishlist</span><b id="mobileWishlistCount">0</b></a>
+    <a href="#cartDrawer" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="cart" aria-label="Enquiry cart"><i class="fa-solid fa-bag-shopping"></i><span>Cart</span><b id="mobileCartCount">0</b></a>
   </nav>
 
 
@@ -1165,37 +1165,7 @@
     <div class="drawer-body" id="wishlistItemsContainer"></div>
   </div>
 
-  <!-- Drawer Overlay & Drawers -->
-  <div class="drawer-overlay" id="drawerOverlay"></div>
-
-  <!-- Cart Drawer -->
-  <div class="drawer" id="cartDrawer">
-    <div class="drawer-header">
-      <h3 class="drawer-title"><i class="fa-solid fa-bag-shopping"></i> Enquiry Cart</h3>
-      <button class="drawer-close" id="closeCartBtn">✕</button>
-    </div>
-    <div class="drawer-body" id="cartItemsContainer"></div>
-    <div class="drawer-footer">
-      <div style="display:flex; justify-content:space-between; margin-bottom:16px; font-weight:600; font-size:1.1rem; font-family:var(--font-heading);">
-        <span>Est. Total:</span>
-        <span id="cartTotalAmount" style="color:var(--accent-maroon);">₹0</span>
-      </div>
-      <button class="btn-primary" id="waCheckoutBtn" style="width:100%;">
-        <i class="fa-brands fa-whatsapp"></i> Send Order via WhatsApp
-      </button>
-    </div>
-  </div>
-
-  <!-- Wishlist Drawer -->
-  <div class="drawer" id="wishlistDrawer">
-    <div class="drawer-header">
-      <h3 class="drawer-title"><i class="fa-regular fa-heart"></i> Saved Wishlist</h3>
-      <button class="drawer-close" id="closeWishlistBtn">✕</button>
-    </div>
-    <div class="drawer-body" id="wishlistItemsContainer"></div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="script.js?v=20260822d"></script>
   <script>
     const occasionData = {
       engagement: {
@@ -1449,7 +1419,7 @@
             <p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">${m.desc}</p>
             <div style="display:flex; justify-content:space-between; align-items:center;">
               <span class="product-price" style="font-size:1.05rem;">₹${m.price.toLocaleString()}</span>
-              <a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Bridal%20Service%20(${encodeURIComponent(m.title)})." target="_blank" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
+              <a href="https://wa.me/919791014662?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Bridal%20Service%20(${encodeURIComponent(m.title)})." target="_blank" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">
                 <i class="fa-brands fa-whatsapp"></i> Book
               </a>
             </div>
@@ -1539,7 +1509,7 @@
       if (!cartText) cartText = 'Custom Thattu Enquiry';
 
       const msg = "Vanakkam Vedha! I want to place a Thattu Delivery Order:\n\n*Customer:* " + name + "\n*Phone:* " + phone + "\n*Mandapam Address:* " + address + "\n*Event Date:* " + date + "\n*Notes:* " + notes + "\n\n*Selected Items:*\n" + cartText;
-      window.open("https://wa.me/919597244055?text=" + encodeURIComponent(msg), '_blank');
+      window.open("https://wa.me/919791014662?text=" + encodeURIComponent(msg), '_blank');
     }
 
     document.addEventListener('DOMContentLoaded', () => {
