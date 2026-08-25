@@ -202,6 +202,36 @@ document.addEventListener('DOMContentLoaded', () => {
     updateBadges();
   };
 
+  window.enhanceStoreWishlistButtons = function() {
+    document.querySelectorAll('#thattuStoreGrid .thattu-card, #thattuStoreGrid .occasion-store-card').forEach(card => {
+      if (card.querySelector('.store-wishlist-btn')) return;
+
+      const cartButton = card.querySelector('[onclick*="addToCart"]');
+      if (!cartButton) return;
+
+      const match = cartButton.getAttribute('onclick').match(/addToCart\('([^']+)',\s*'((?:\\'|[^'])*)',\s*([\d.]+),\s*'([^']+)'\)/);
+      if (!match) return;
+
+      const [, id, rawName, price, img] = match;
+      const name = rawName.replace(/\\'/g, "'");
+      const actions = document.createElement('div');
+      actions.className = 'product-actions store-product-actions';
+
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'action-btn store-wishlist-btn';
+      button.title = 'Add to Wishlist';
+      button.setAttribute('aria-label', `Add ${name} to Wishlist`);
+      button.innerHTML = '<i class="fa-regular fa-heart"></i>';
+      button.addEventListener('click', () => window.toggleWishlist(id, name, Number(price), img));
+
+      actions.appendChild(button);
+      card.querySelector('.product-img-wrap').appendChild(actions);
+    });
+  };
+
+  window.enhanceStoreWishlistButtons();
+
   function renderWishlist() {
     const container = document.getElementById('wishlistItemsContainer');
     if (!container) return;

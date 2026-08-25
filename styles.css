@@ -674,6 +674,10 @@ img {
   font-size: 1rem;
 }
 
+.store-product-actions {
+  top: 42px;
+}
+
 .action-btn:hover {
   background: var(--accent-maroon);
   color: #FFFDF8;
@@ -1257,6 +1261,12 @@ img {
 }
 
 @media (max-width: 768px) {
+  .thattu-card .store-product-actions,
+  .occasion-store-card .store-product-actions {
+    opacity: 1;
+    transform: none;
+  }
+
   .nav-menu {
     position: fixed;
     top: var(--nav-height);
