@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>VEDHA Bridal Studio — 52 HD Kalyanam Makeup Modes, Poo Veni & Mehendi | 9791014662</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEDHA Bridal Studio — 52 HD Kalyanam Makeup Modes, Poo Veni & Mehendi | 9597244055</title>
   <meta name="description" content="VEDHA Doorstep Bridal Makeup Studio. 52 South Indian HD Kalyanam Makeup Modes, Reception Glam, Jasmine Poo Veni hair art, and Bridal Mehendi across Tamil Nadu.">
   
-  <link rel="stylesheet" href="styles.css?v=20260822b">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -99,7 +99,7 @@
             <li><i class="fa-solid fa-check" style="color:var(--accent-gold); margin-right:8px;"></i> Fresh Flower Hair Decor</li>
             <li><i class="fa-solid fa-check" style="color:var(--accent-gold); margin-right:8px;"></i> Eyelash Extension & Touchup</li>
           </ul>
-          <a href="https://wa.me/919791014662?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Essential%20Kalyanam%20Package%20(Rs.2500)." target="_blank" class="btn-primary" style="width:100%;">
+          <a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Essential%20Kalyanam%20Package%20(Rs.2500)." target="_blank" class="btn-primary" style="width:100%;">
             <i class="fa-brands fa-whatsapp"></i> Reserve Package
           </a>
         </div>
@@ -116,7 +116,7 @@
             <li><i class="fa-solid fa-check" style="color:var(--accent-gold); margin-right:8px;"></i> Jewelry Fixing & Saree Can-Can Setup</li>
             <li><i class="fa-solid fa-check" style="color:var(--accent-gold); margin-right:8px;"></i> Free Groom Touchup (1 Person)</li>
           </ul>
-          <a href="https://wa.me/919791014662?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Signature%20Royal%20Glam%20Package%20(Rs.4500)." target="_blank" class="btn-primary" style="width:100%;">
+          <a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Signature%20Royal%20Glam%20Package%20(Rs.4500)." target="_blank" class="btn-primary" style="width:100%;">
             <i class="fa-brands fa-whatsapp"></i> Reserve Package
           </a>
         </div>
@@ -132,7 +132,7 @@
             <li><i class="fa-solid fa-check" style="color:var(--accent-gold); margin-right:8px;"></i> Full Bridal Mehendi Included</li>
             <li><i class="fa-solid fa-check" style="color:var(--accent-gold); margin-right:8px;"></i> Pre-Wedding Trial Makeup Session</li>
           </ul>
-          <a href="https://wa.me/919791014662?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Empress%20Grand%20Suite%20(Rs.7500)." target="_blank" class="btn-primary" style="width:100%;">
+          <a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Empress%20Grand%20Suite%20(Rs.7500)." target="_blank" class="btn-primary" style="width:100%;">
             <i class="fa-brands fa-whatsapp"></i> Reserve Package
           </a>
         </div>
@@ -172,7 +172,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom">
-        <p>© 2026 VEDHA Traditions. All Rights Reserved. WhatsApp / Concierge: 9791014662.</p>
+        <p>© 2026 VEDHA Traditions. All Rights Reserved. WhatsApp / Concierge: 9597244055.</p>
       </div>
     </div>
   </footer>
@@ -182,8 +182,9 @@
     <a href="thattu.html" class="mobile-bottom-link"><i class="fa-solid fa-store"></i><span>Store</span></a>
     <a href="thattu.html?mode=thattu" class="mobile-bottom-link"><i class="fa-solid fa-basket-shopping"></i><span>Thattu</span></a>
     <a href="makeup.html" class="mobile-bottom-link active"><i class="fa-solid fa-crown"></i><span>Bridal</span></a>
-    <a href="#wishlistDrawer" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span>Wishlist</span><b id="mobileWishlistCount">0</b></a>
-    <a href="#cartDrawer" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="cart" aria-label="Enquiry cart"><i class="fa-solid fa-bag-shopping"></i><span>Cart</span><b id="mobileCartCount">0</b></a>
+    <a href="calendar.html" class="mobile-bottom-link"><i class="fa-solid fa-calendar-days"></i><span>Calendar</span></a>
+    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="wishlist" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span>Wishlist</span><b id="mobileWishlistCount">0</b></button>
+    <button type="button" class="mobile-bottom-link mobile-bottom-action" data-mobile-action="cart" aria-label="Enquiry cart"><i class="fa-solid fa-bag-shopping"></i><span>Cart</span><b id="mobileCartCount">0</b></button>
   </nav>
 
 
@@ -219,6 +220,7 @@
     <div class="drawer-body" id="wishlistItemsContainer"></div>
   </div>
 
+  <script src="script.js"></script>
   <script>
     // Drag Handle Logic for Before & After Transformation
     const container = document.getElementById('baSlider');
@@ -239,24 +241,25 @@
         handle.style.left = percentage + '%';
       }
 
-      function startDrag(e) {
+      container.addEventListener('mousedown', (e) => {
         isDragging = true;
-        if (container.setPointerCapture) container.setPointerCapture(e.pointerId);
         updateSlider(e.clientX);
-      }
+      });
 
-      function moveDrag(e) {
+      window.addEventListener('mouseup', () => isDragging = false);
+      window.addEventListener('mousemove', (e) => {
         if (isDragging) updateSlider(e.clientX);
-      }
+      });
 
-      function endDrag() {
-        isDragging = false;
-      }
+      container.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        updateSlider(e.touches[0].clientX);
+      });
 
-      container.addEventListener('pointerdown', startDrag);
-      container.addEventListener('pointermove', moveDrag);
-      container.addEventListener('pointerup', endDrag);
-      container.addEventListener('pointercancel', endDrag);
+      window.addEventListener('touchend', () => isDragging = false);
+      window.addEventListener('touchmove', (e) => {
+        if (isDragging) updateSlider(e.touches[0].clientX);
+      });
     }
 
     // MAKEUP DATA ARRAY FOR ALL 52 BRIDAL MODELS
@@ -689,7 +692,7 @@
             '<p class="product-desc" style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">' + m.desc + '</p>' +
             '<div style="display:flex; justify-content:space-between; align-items:center;">' +
               '<span class="product-price" style="font-size:1.05rem;">₹' + m.price.toLocaleString() + '</span>' +
-              '<a href="https://wa.me/919791014662?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Bridal%20Mode%20%23' + m.id + '%20(' + encodeURIComponent(m.title) + ')." target="_blank" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">' +
+              '<a href="https://wa.me/919597244055?text=Vanakkam%20Vedha!%20I%20want%20to%20book%20Bridal%20Mode%20%23' + m.id + '%20(' + encodeURIComponent(m.title) + ')." target="_blank" class="btn-primary" style="padding:6px 12px; font-size:0.75rem;">' +
                 '<i class="fa-brands fa-whatsapp"></i> Book' +
               '</a>' +
             '</div>' +
@@ -710,6 +713,36 @@
     });
   </script>
 
-  <script src="script.js?v=20260822d"></script>
+  <!-- Drawer Overlay & Drawers -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Cart Drawer -->
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-solid fa-bag-shopping"></i> Enquiry Cart</h3>
+      <button class="drawer-close" id="closeCartBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItemsContainer"></div>
+    <div class="drawer-footer">
+      <div style="display:flex; justify-content:space-between; margin-bottom:16px; font-weight:600; font-size:1.1rem; font-family:var(--font-heading);">
+        <span>Est. Total:</span>
+        <span id="cartTotalAmount" style="color:var(--accent-maroon);">₹0</span>
+      </div>
+      <button class="btn-primary" id="waCheckoutBtn" style="width:100%;">
+        <i class="fa-brands fa-whatsapp"></i> Send Order via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title"><i class="fa-regular fa-heart"></i> Saved Wishlist</h3>
+      <button class="drawer-close" id="closeWishlistBtn">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistItemsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

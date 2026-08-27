@@ -1,0 +1,110 @@
+[
+  {
+    "id": "bridal_1",
+    "category": "kalyanam",
+    "categoryLabel": "HD KALYANAM GLAM",
+    "name": "Kanchipuram Red Silk HD Bridal Glow",
+    "price": 4500,
+    "img": "images/hd_kalyanam_bride.png",
+    "shortDesc": "Matte HD airbrush foundation with classic wing liner & deep red lips. Tailored for high-intensity mandapam camera lighting.",
+    "material": "Ultra-HD Water-Resistant Airbrush",
+    "craftTime": "Senior Artist - 3 Hours venue session",
+    "customizable": true
+  },
+  {
+    "id": "bridal_2",
+    "category": "kalyanam",
+    "categoryLabel": "TEMPLE HERITAGE GLAM",
+    "name": "Traditional Iyer Madisar Temple Glam",
+    "price": 4800,
+    "img": "images/hd_bridal_var1.png",
+    "shortDesc": "Smudge-proof eye makeup with authentic sandal tilakam & nethi chutti fixing. Ideal for temple ceremony photography.",
+    "material": "Authentic Sandal & Nethi Chutti setting",
+    "craftTime": "Traditional Specialist - 2.5 Hours",
+    "customizable": true
+  },
+  {
+    "id": "bridal_3",
+    "category": "kalyanam",
+    "categoryLabel": "HERITAGE BRAID & GLOW",
+    "name": "Iyengar Wedding Sun & Moon Hair Art",
+    "price": 4200,
+    "img": "images/hd_bridal_var2.png",
+    "shortDesc": "Surya & Chandra ornament setting with fresh jasmine strand braid. Natural dewy skin finish with long-lasting coral lip stain.",
+    "material": "Surya & Chandra Ornaments & Jasmine",
+    "craftTime": "Hair Art Specialist - 2 Hours",
+    "customizable": true
+  },
+  {
+    "id": "bridal_4",
+    "category": "kalyanam",
+    "categoryLabel": "PASTEL ROMANTIC GLAM",
+    "name": "Pastel Pink Muhurtham Silk Saree Look",
+    "price": 4100,
+    "img": "images/engagement_glam_bride.png",
+    "shortDesc": "Soft romantic blush tones with delicate rose gold highlighter. Monochromatic peach tones with fluttery mink lashes also available.",
+    "material": "Rose Gold Highlighter & Mink Lashes",
+    "craftTime": "Atelier Glam Artist - 2 Hours",
+    "customizable": true
+  },
+  {
+    "id": "bridal_5",
+    "category": "kalyanam",
+    "categoryLabel": "HALDI GLOW & VINTAGE WAVES",
+    "name": "Classic Yellow Muhurtham Haldi Makeup",
+    "price": 3800,
+    "img": "images/engagement_var1.png",
+    "shortDesc": "Water-resistant radiant finish with golden bronze eye shadow. Vintage retro wing liner and pin curl waves also available.",
+    "material": "Water-resistant Golden Bronze Shimmer",
+    "craftTime": "Atelier Glam Artist - 2 Hours",
+    "customizable": true
+  },
+  {
+    "id": "bridal_6",
+    "category": "reception",
+    "categoryLabel": "RECEPTION SHIMMER GLAM",
+    "name": "Glass Skin Dewy Glow Reception Look",
+    "price": 4500,
+    "img": "images/reception_shimmer_bride.png",
+    "shortDesc": "K-beauty inspired glass skin finish with subtle shimmer cheeks. Metallic smokey eye, Arabian cut crease, and celebrity airbrush variants crafted to order.",
+    "material": "K-Beauty Glass Skin & Metallic Pigments",
+    "craftTime": "Celebrity Airbrush Specialist - 3 Hours",
+    "customizable": true
+  },
+  {
+    "id": "bridal_7",
+    "category": "hair",
+    "categoryLabel": "FRESH POO VENI HAIR ART",
+    "name": "Grand Madurai Jasmine Poo Veni Braid",
+    "price": 2500,
+    "img": "images/poo_veni_hair_art.png",
+    "shortDesc": "Full length fresh Madurai malli braid with gold billai ornaments. Rose net, lotus crown, temple poola jada, and boho braid styles available.",
+    "material": "Fresh Madurai Malli & Lotus Buds",
+    "craftTime": "Master Floral Stylist - 2 Hours",
+    "customizable": true
+  },
+  {
+    "id": "bridal_8",
+    "category": "mehendi",
+    "categoryLabel": "BRIDAL MEHENDI ART",
+    "name": "Full Arm Royal Marwari Bridal Mehendi",
+    "price": 3500,
+    "img": "images/mehendi_hands.png",
+    "shortDesc": "Elbow-length dense henna featuring Baraat & Doli motifs. Radha Krishna portrait, minimalist Gulf Arabian, and personalized love story mehendi also offered.",
+    "material": "100% Organic Sojat Chemical-Free Henna",
+    "craftTime": "Master Henna Artist - 4-6 Hours",
+    "customizable": true
+  },
+  {
+    "id": "bridal_9",
+    "category": "draping",
+    "categoryLabel": "BRIDAL SAREE DRAPING",
+    "name": "Traditional Koorai Saree Box Pleating",
+    "price": 1200,
+    "img": "images/bridal_makeup.png",
+    "shortDesc": "Pre-pleated crisp silk saree draping with pin security. Madisar, Can-Can volume, double dupatta, and modern butterfly pallu also available.",
+    "material": "Pre-pleated Security & Can-Can Volumizing",
+    "craftTime": "Senior Draping Specialist - 45 Mins",
+    "customizable": true
+  }
+]
