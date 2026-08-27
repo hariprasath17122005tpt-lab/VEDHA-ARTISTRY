@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
         msg += `${index + 1}. *${item.name}* (Qty: ${item.qty}) - ₹${itemTotal.toLocaleString()}\n`;
       });
       msg += `\n*Estimated Total:* ₹${total.toLocaleString()}\n\nPlease confirm availability and custom options.`;
-      window.open(`https://wa.me/919597244055?text=${encodeURIComponent(msg)}`, '_blank');
+      window.open(`https://wa.me/919791014662?text=${encodeURIComponent(msg)}`, '_blank');
     });
   }
 
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `*Sweets:* ${builderSelection.sweets}\n` +
         `*Return Gifts:* ${builderSelection.gift}\n\n` +
         `Please contact me to finalize details and deliver to our venue.`;
-      window.open(`https://wa.me/919597244055?text=${encodeURIComponent(msg)}`, '_blank');
+      window.open(`https://wa.me/919791014662?text=${encodeURIComponent(msg)}`, '_blank');
     });
   }
 
